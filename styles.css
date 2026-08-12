@@ -734,3 +734,25 @@ button {
   white-space: nowrap;
   border: 0;
 }
+
+
+/* =========================================================
+   Cuentas Hogar — estilos adicionales para
+   calculadoras/metros-cuadrados.html
+   Añadir AL FINAL de styles.css. Solo una regla nueva:
+   el resto reutiliza clases ya existentes de
+   consumo-electrico.html y pintura.html
+   (page-intro, breadcrumb, calc-tool-grid, calc-panel,
+   form-group, form-hint, field-error, form-actions,
+   result-group, result-grid, result-item, result-total,
+   result-total-label, result-total-value, formula-note,
+   prose, faq-item, card-grid, calc-card, calc-badge,
+   btn-disabled, cta-band...).
+   ========================================================= */
+
+/* Texto "(opcional)" en línea junto a una etiqueta de campo */
+.form-hint-inline {
+  font-weight: 400;
+  color: var(--color-text-faint);
+  font-size: 0.85em;
+}
