@@ -6,12 +6,12 @@
 <title>Calculadora de Pintura: Cuántos Litros Necesitas | Cuentas Hogar</title>
 <meta name="description" content="Calculadora de pintura gratuita: descubre cuánta pintura necesitas para una habitación a partir de sus metros cuadrados, puertas, ventanas, capas y rendimiento por litro.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.cuentashogar.es/calculadoras/pintura.html">
+<link rel="canonical" href="https://cuentashogar.com/calculadoras/pintura.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cuentas Hogar">
 <meta property="og:title" content="Calculadora de Pintura: Cuántos Litros Necesitas | Cuentas Hogar">
 <meta property="og:description" content="Calcula cuántos litros de pintura necesitas para una habitación según sus m², puertas, ventanas, capas y rendimiento.">
-<meta property="og:url" content="https://www.cuentashogar.es/calculadoras/pintura.html">
+<meta property="og:url" content="https://cuentashogar.com/calculadoras/pintura.html">
 <meta name="theme-color" content="#f5f8f6">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="../styles.css">
@@ -21,9 +21,9 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.cuentashogar.es/" },
-    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://www.cuentashogar.es/#calculadoras" },
-    { "@type": "ListItem", "position": 3, "name": "Pintura necesaria", "item": "https://www.cuentashogar.es/calculadoras/pintura.html" }
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cuentashogar.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://cuentashogar.com/#calculadoras" },
+    { "@type": "ListItem", "position": 3, "name": "Pintura necesaria", "item": "https://cuentashogar.com/calculadoras/pintura.html" }
   ]
 }
 </script>
@@ -121,7 +121,7 @@
             <div class="form-group" id="row-area-puerta">
               <label for="area-puerta">Superficie por puerta (m²)</label>
               <input type="number" id="area-puerta" name="area-puerta" inputmode="decimal" min="0" step="any" value="1.6">
-              <span class="form-hint">Valor orientativo (aprox. 0,80 × 2,00 m). Edítalo si conoces la medida real de tus puertas.</span>
+              <span class="form-hint">Valor orientativo (aprox. 0,80 × 2,00 m). Es una estimación: edítalo si conoces la medida real de tus puertas.</span>
               <span class="field-error" id="error-area-puerta" role="alert"></span>
             </div>
 
@@ -134,7 +134,7 @@
             <div class="form-group" id="row-area-ventana">
               <label for="area-ventana">Superficie por ventana (m²)</label>
               <input type="number" id="area-ventana" name="area-ventana" inputmode="decimal" min="0" step="any" value="1.5">
-              <span class="form-hint">Valor orientativo (aprox. 1,20 × 1,25 m). Edítalo si conoces la medida real de tus ventanas.</span>
+              <span class="form-hint">Valor orientativo (aprox. 1,20 × 1,25 m). Es una estimación: edítalo si conoces la medida real de tus ventanas.</span>
               <span class="field-error" id="error-area-ventana" role="alert"></span>
             </div>
 
@@ -152,7 +152,7 @@
             <div class="form-group" id="row-rendimiento">
               <label for="rendimiento">Rendimiento de la pintura (m²/litro)</label>
               <input type="number" id="rendimiento" name="rendimiento" inputmode="decimal" min="0" step="any" placeholder="10">
-              <span class="form-hint">Consulta la ficha técnica o el envase de tu pintura: el rendimiento varía según el producto y el soporte.</span>
+              <span class="form-hint">Consulta la ficha técnica o el envase de tu pintura: el rendimiento varía según el producto y el soporte. No existe un rendimiento universal.</span>
               <span class="field-error" id="error-rendimiento" role="alert"></span>
             </div>
 
@@ -207,7 +207,7 @@
             <p class="purchase-tip" id="purchase-tip"></p>
 
             <p class="formula-note">
-              Fórmulas usadas: <code>superficie paredes = 2 × (largo + ancho) × altura</code>, <code>superficie neta = paredes − puertas − ventanas</code>, <code>superficie con capas = neta × nº de capas</code>, <code>litros = superficie con capas ÷ rendimiento</code>. Los resultados son una estimación orientativa.
+              Fórmulas usadas: <code>superficie paredes = 2 × (largo + ancho) × altura</code>, <code>superficie neta = paredes − puertas − ventanas</code> (nunca negativa), <code>superficie con capas = neta × nº de capas</code>, <code>litros = superficie con capas ÷ rendimiento</code>. Los resultados son una estimación orientativa.
             </p>
           </div>
         </div>
@@ -241,7 +241,7 @@
         </p>
         <h4 class="visually-hidden">Valores orientativos y medidas reales</h4>
         <p>
-          Ten en cuenta que estos valores son solo una referencia general: el tamaño real de puertas y ventanas varía según la vivienda, así que siempre que puedas, sustitúyelos por las medidas exactas de tu habitación para obtener un resultado más ajustado.
+          Ten en cuenta que estos valores son solo una referencia general: el tamaño real de puertas y ventanas varía según la vivienda, así que siempre que puedas, sustitúyelos por las medidas exactas de tu habitación para obtener un resultado más ajustado. La superficie neta nunca se muestra como negativa: si el total de puertas y ventanas superara la superficie de las paredes, el cálculo se ajusta a 0 m² y se te avisa para que revises los datos introducidos.
         </p>
 
         <h3>Cuántas capas de pintura son necesarias</h3>
@@ -251,7 +251,7 @@
 
         <h3>Qué significa el rendimiento de una pintura</h3>
         <p>
-          El rendimiento de una pintura indica cuántos metros cuadrados se pueden cubrir con un litro de producto en una sola capa, y se expresa habitualmente en m²/litro. No existe un rendimiento universal válido para todas las pinturas: depende del tipo de producto (plástica, acrílica, esmalte...), de su formulación, del color y de la porosidad o absorción del soporte sobre el que se aplica. Por eso esta calculadora te pide introducir el rendimiento en lugar de asumir uno fijo.
+          El rendimiento de una pintura indica cuántos metros cuadrados se pueden cubrir con un litro de producto en una sola capa, y se expresa habitualmente en m²/litro. No existe un rendimiento universal válido para todas las pinturas: depende del tipo de producto (plástica, acrílica, esmalte...), de su formulación, del color y de la porosidad o absorción del soporte sobre el que se aplica. Por eso esta calculadora te pide introducir el rendimiento en lugar de asumir uno fijo, y siempre debes consultar el indicado en la ficha técnica del producto que vayas a usar.
         </p>
 
         <h4>Cómo interpretar los m²/litro indicados por el fabricante</h4>
@@ -259,7 +259,7 @@
           El dato de rendimiento que aparece en el envase o en la ficha técnica de la pintura suele referirse a una sola capa sobre un soporte en condiciones normales. Si tu pared es muy absorbente, está sin imprimar o tiene textura, el rendimiento real puede ser algo menor al indicado, ya que la pintura se consume más rápido. Al introducir este valor en la calculadora, ten presente que se trata de una referencia de fabricante y que el consumo real en obra puede variar ligeramente.
         </p>
 
-        <h3>Ejemplo práctico para una habitación</h3>
+        <h3>Ejemplo práctico</h3>
         <p>
           Supongamos una habitación de 4 × 3 metros con una altura de 2,5 metros, con 1 puerta y 1 ventana, a la que se aplicarán 2 capas de una pintura con un rendimiento de 10 m²/litro:
         </p>
@@ -277,10 +277,10 @@
 
         <h3>Por qué conviene tener cierto margen de pintura</h3>
         <p>
-          El resultado de esta calculadora es una estimación basada en la superficie, las capas y el rendimiento indicado, pero el consumo real en obra puede ser algo mayor por varios motivos: la absorción del soporte, pequeñas pérdidas durante la aplicación con rodillo o brocha, los retoques posteriores en esquinas y zonas de difícil acceso, o la necesidad de dejar producto de reserva para futuros repasos. Por eso, antes de comprar, es recomendable revisar el resultado calculado junto con las indicaciones del fabricante y, si es posible, redondear hacia el envase disponible inmediatamente superior en lugar de comprar la cantidad exacta calculada.
+          El resultado de esta calculadora es una estimación basada en la superficie, las capas y el rendimiento indicado, pero el consumo real en obra puede ser algo mayor por varios motivos: la absorción del soporte, pequeñas pérdidas durante la aplicación con rodillo o brocha, los retoques posteriores en esquinas y zonas de difícil acceso, irregularidades en la superficie de la pared, o la necesidad de dejar producto de reserva para futuros repasos. Por eso, antes de comprar, es recomendable revisar el resultado calculado junto con las instrucciones del fabricante y, si es posible, redondear hacia el envase disponible inmediatamente superior en lugar de comprar la cantidad exacta calculada.
         </p>
 
-        <h3>Errores frecuentes al calcular pintura</h3>
+        <h3>Errores frecuentes</h3>
         <p>
           Algunos errores habituales al estimar la pintura necesaria son: olvidar restar la superficie de puertas y ventanas, lo que lleva a comprar más pintura de la necesaria; usar un rendimiento genérico sin comprobar el indicado por el fabricante del producto concreto; no tener en cuenta que algunas pinturas o colores requieren una capa adicional; y calcular solo una habitación cuando en realidad se van a pintar varias, sumando mal las superficies parciales. Revisar cada uno de estos puntos antes de comprar ayuda a evitar tanto la falta como el exceso de producto.
         </p>
@@ -343,16 +343,16 @@
         </article>
 
         <article class="calc-card is-soon">
-          <span class="calc-badge">m²</span>
-          <h3>Metros cuadrados</h3>
-          <p>Calcula superficies fácilmente.</p>
+          <span class="calc-badge">BTU</span>
+          <h3>Aire acondicionado</h3>
+          <p>Calcula la potencia necesaria para climatizar una habitación.</p>
           <span class="btn btn-disabled" aria-disabled="true">Próximamente</span>
         </article>
 
         <article class="calc-card is-soon">
-          <span class="calc-badge">BTU</span>
-          <h3>Aire acondicionado</h3>
-          <p>Calcula la potencia necesaria para climatizar una habitación.</p>
+          <span class="calc-badge">€</span>
+          <h3>Presupuesto del hogar</h3>
+          <p>Organiza tus gastos mensuales.</p>
           <span class="btn btn-disabled" aria-disabled="true">Próximamente</span>
         </article>
 
@@ -573,7 +573,7 @@
       document.getElementById("purchase-tip").textContent =
         "Como orientación de compra, ten en cuenta un margen sobre esta cifra (por ejemplo, en torno a " +
         formatLitros(litrosRedondeados) +
-        ") según la absorción de la pared, pérdidas durante la aplicación, retoques y las recomendaciones del fabricante de tu pintura.";
+        ") según la absorción del soporte, pérdidas durante la aplicación, retoques, irregularidades y las instrucciones del fabricante de tu pintura.";
 
       resultEmpty.hidden = true;
       resultContent.hidden = false;
