@@ -952,3 +952,96 @@ button {
 .faq-item:last-child {
   margin-bottom: 0;
 }
+
+
+/* =========================================================
+   Cuentas Hogar — estilos adicionales para
+   calculadoras/pintura.html
+   Añadir AL FINAL de styles.css. Complementa los estilos ya
+   añadidos para calculadoras/consumo-electrico.html
+   (breadcrumb, page-intro, calc-tool-grid, calc-panel,
+   form-group, form-hint, field-error, form-actions,
+   result-group, result-grid, result-item, formula-note,
+   prose, faq-item...).
+   ========================================================= */
+
+/* Selects dentro del formulario de calculadora */
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-s);
+  background: var(--color-bg);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.form-group select:focus {
+  border-color: var(--color-primary);
+  background: var(--color-surface);
+}
+
+/* Subtítulo para agrupar campos opcionales dentro del formulario */
+.field-group-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--color-text-faint);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.field-group-title:first-of-type {
+  margin-top: 0.5rem;
+}
+
+/* Bloque de resultado destacado (total en litros) */
+.result-total {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-m);
+  background: var(--color-primary-tint);
+  border: 1px solid var(--color-primary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.result-total-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.result-total-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+/* Consejo de compra bajo el resultado destacado */
+.purchase-tip {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-s);
+  padding: 0.9rem 1rem;
+}
+
+/* Utilidad de accesibilidad reutilizada como en index.html */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
