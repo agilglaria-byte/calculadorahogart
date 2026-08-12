@@ -3,133 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora de Consumo Eléctrico | Cuentas Hogar</title>
-<meta name="description" content="Calcula el consumo eléctrico de cualquier aparato en kWh diarios, mensuales y anuales, y su coste en euros según el precio del kWh. Gratis y sin registro.">
+<title>Calculadora de Consumo Eléctrico y Coste | Cuentas Hogar</title>
+<meta name="description" content="Calculadora de consumo eléctrico gratuita: calcula cuántos kWh consume un aparato y cuánto cuesta usarlo al día, al mes y al año. Rápida, sencilla y sin registro.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.calculadorahogar.es/calculadoras/consumo-electrico.html">
+<link rel="canonical" href="https://www.cuentashogar.es/calculadoras/consumo-electrico.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuentas Hogar">
+<meta property="og:title" content="Calculadora de Consumo Eléctrico y Coste | Cuentas Hogar">
+<meta property="og:description" content="Calcula cuántos kWh consume un aparato y cuánto cuesta usarlo al día, al mes y al año.">
+<meta property="og:url" content="https://www.cuentashogar.es/calculadoras/consumo-electrico.html">
+<meta name="theme-color" content="#f5f8f6">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="../styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.cuentashogar.es/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://www.cuentashogar.es/#calculadoras" },
+    { "@type": "ListItem", "position": 3, "name": "Consumo eléctrico", "item": "https://www.cuentashogar.es/calculadoras/consumo-electrico.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cómo calcular el consumo eléctrico de un aparato?", "acceptedAnswer": { "@type": "Answer", "text": "Se multiplica la potencia del aparato en kW (vatios entre 1000) por las horas de uso al día. El resultado son los kWh consumidos ese día, que puedes multiplicar por 30 o por 365 para obtener el consumo mensual o anual." } },
+    { "@type": "Question", "name": "¿Qué significa kWh?", "acceptedAnswer": { "@type": "Answer", "text": "kWh son las siglas de kilovatio-hora, la unidad que mide la energía eléctrica consumida durante un periodo de tiempo, y es la que aparece en la factura de la luz." } },
+    { "@type": "Question", "name": "¿Cuánto consume un aparato de 1000 W?", "acceptedAnswer": { "@type": "Answer", "text": "Un aparato de 1000 W (1 kW) funcionando durante una hora consume 1 kWh. El coste de esa hora se obtiene multiplicando 1 kWh por el precio del kWh de tu tarifa." } },
+    { "@type": "Question", "name": "¿Dónde puedo encontrar los vatios de mi electrodoméstico?", "acceptedAnswer": { "@type": "Answer", "text": "La potencia en vatios suele aparecer en la etiqueta de características técnicas del aparato, en su manual de instrucciones o grabada cerca del cable de alimentación." } },
+    { "@type": "Question", "name": "¿La calculadora incluye impuestos?", "acceptedAnswer": { "@type": "Answer", "text": "No. Esta calculadora estima únicamente el coste de la energía consumida según el precio del kWh que introduces, sin impuestos ni otros cargos." } },
+    { "@type": "Question", "name": "¿Por qué el resultado puede ser diferente de mi factura?", "acceptedAnswer": { "@type": "Answer", "text": "La factura real incluye también la potencia contratada, impuestos, peajes de acceso y otros cargos regulados que no dependen del uso de un aparato concreto, por lo que el resultado de esta calculadora es una estimación del coste de energía." } }
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <header class="site-header">
-  <div class="container">
-    <a class="brand" href="../index.html">
-      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M4 17 16 6l12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M7 14v12h18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M13 26v-7h6v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>Calculadora<span class="brand-name-alt">Hogar</span></span>
-    </a>
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">Cuentas<span>Hogar</span></a>
+
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
     </button>
+
     <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
       <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../index.html#calculadoras" aria-current="page">Calculadoras</a></li>
-        <li><a href="../index.html#articulos">Artículos</a></li>
+        <li><a href="../index.html#guias">Guías</a></li>
         <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
-        <li><a class="nav-cta" href="../contacto.html">Contacto</a></li>
       </ul>
+      <a class="btn btn-primary nav-cta" href="../index.html#calculadoras">Ver calculadoras</a>
     </nav>
   </div>
 </header>
 
 <main id="contenido">
-  <section class="page-hero">
+
+  <!-- ================= INTRO / BREADCRUMB ================= -->
+  <section class="page-intro">
     <div class="container">
       <nav class="breadcrumb" aria-label="Miga de pan">
-        <a href="../index.html">Inicio</a> / <a href="../index.html#calculadoras">Calculadoras</a> / <span aria-current="page">Consumo eléctrico</span>
+        <a href="../index.html">Inicio</a> &gt;
+        <a href="../index.html#calculadoras">Calculadoras</a> &gt;
+        <span class="current" aria-current="page">Consumo eléctrico</span>
       </nav>
-      <span class="eyebrow">Calculadora gratuita</span>
       <h1>Calculadora de consumo eléctrico</h1>
-      <p class="hero-lede">Introduce la potencia del aparato, las horas de uso al día y el precio del kWh para conocer al instante su consumo en kWh y su coste en euros, al día, al mes y al año.</p>
+      <p>Calcula cuánto consume un aparato eléctrico y cuánto te cuesta utilizarlo, en euros al día, al mes y al año. Solo necesitas su potencia, las horas de uso diario y el precio del kWh.</p>
     </div>
   </section>
 
-  <section class="calc-tool" aria-labelledby="herramienta-heading">
+  <!-- ================= CALCULADORA ================= -->
+  <section class="section" id="calculadora" aria-labelledby="calc-heading">
     <div class="container">
-      <h2 id="herramienta-heading" class="visually-hidden">Herramienta de cálculo</h2>
+      <h2 id="calc-heading">Calcula tu consumo eléctrico</h2>
+
       <div class="calc-tool-grid">
-        <div class="calc-form-card">
-          <h2>Introduce los datos del aparato</h2>
+        <div class="calc-panel">
+          <h3>Datos del aparato</h3>
           <form id="calc-form" novalidate>
-            <div class="form-row" id="row-potencia">
+            <div class="form-group" id="row-potencia">
               <label for="potencia">Potencia del aparato (W)</label>
               <input type="number" id="potencia" name="potencia" inputmode="decimal" min="0" step="any" placeholder="1500">
-              <span class="field-hint">La encontrarás en la etiqueta o el manual del aparato.</span>
+              <span class="form-hint">La encontrarás en la etiqueta o el manual del aparato.</span>
               <span class="field-error" id="error-potencia" role="alert"></span>
             </div>
 
-            <div class="form-row" id="row-horas">
+            <div class="form-group" id="row-horas">
               <label for="horas">Horas de uso al día</label>
               <input type="number" id="horas" name="horas" inputmode="decimal" min="0" max="24" step="any" placeholder="4">
-              <span class="field-hint">Admite decimales. Entre 0 y 24 horas.</span>
+              <span class="form-hint">Admite decimales. Entre 0 y 24 horas.</span>
               <span class="field-error" id="error-horas" role="alert"></span>
             </div>
 
-            <div class="form-row" id="row-precio">
-              <label for="precio">Precio de la electricidad (€/kWh)</label>
+            <div class="form-group" id="row-precio">
+              <label for="precio">Precio de electricidad (€/kWh)</label>
               <input type="number" id="precio" name="precio" inputmode="decimal" min="0" step="any" placeholder="0.18">
-              <span class="field-hint">Consulta tu factura de la luz para un dato más ajustado.</span>
+              <span class="form-hint">Consulta tu factura de la luz para un dato más ajustado.</span>
               <span class="field-error" id="error-precio" role="alert"></span>
             </div>
 
-            <div class="hero-actions">
+            <div class="form-actions">
               <button class="btn btn-primary" type="submit">Calcular consumo</button>
-              <button class="btn btn-ghost" type="button" id="btn-limpiar">Limpiar</button>
+              <button class="btn btn-outline" type="button" id="btn-limpiar">Limpiar</button>
             </div>
           </form>
         </div>
 
-        <div class="calc-result-card" id="resultados" aria-live="polite">
-          <h2>Resultado</h2>
+        <div class="calc-panel" id="resultados" aria-live="polite">
+          <h3>Resultado</h3>
+
           <div id="result-empty" class="result-placeholder">
             Rellena los tres campos y pulsa «Calcular consumo» para ver el detalle en kWh y en euros.
           </div>
 
           <div id="result-content" hidden>
             <div class="result-group">
-              <h3>Consumo</h3>
+              <h4>Consumo</h4>
               <div class="result-grid">
-                <div class="result-item energy">
-                  <span class="result-label">Consumo diario</span>
+                <div class="result-item">
+                  <span class="result-label">Diario</span>
                   <span class="result-value" id="kwh-dia">—</span>
                 </div>
-                <div class="result-item energy">
-                  <span class="result-label">Consumo mensual</span>
+                <div class="result-item">
+                  <span class="result-label">Mensual</span>
                   <span class="result-value" id="kwh-mes">—</span>
                 </div>
-                <div class="result-item energy">
-                  <span class="result-label">Consumo anual</span>
+                <div class="result-item">
+                  <span class="result-label">Anual</span>
                   <span class="result-value" id="kwh-anio">—</span>
                 </div>
               </div>
             </div>
 
             <div class="result-group">
-              <h3>Coste</h3>
+              <h4>Coste</h4>
               <div class="result-grid">
-                <div class="result-item cost">
-                  <span class="result-label">Coste diario</span>
+                <div class="result-item highlight">
+                  <span class="result-label">Diario</span>
                   <span class="result-value" id="coste-dia">—</span>
                 </div>
-                <div class="result-item cost">
-                  <span class="result-label">Coste mensual</span>
+                <div class="result-item highlight">
+                  <span class="result-label">Mensual</span>
                   <span class="result-value" id="coste-mes">—</span>
                 </div>
-                <div class="result-item cost">
-                  <span class="result-label">Coste anual</span>
+                <div class="result-item highlight">
+                  <span class="result-label">Anual</span>
                   <span class="result-value" id="coste-anio">—</span>
                 </div>
               </div>
             </div>
 
             <p class="formula-note">
-              Fórmula usada: <code>kWh diarios = (W ÷ 1000) × horas al día</code>. El mes se calcula sobre 30 días y el año sobre 365 días. El coste resulta de multiplicar los kWh de cada periodo por el precio del kWh indicado.
+              Fórmula usada: <code>kWh diarios = (W ÷ 1000) × horas al día</code>. El mes se calcula sobre 30 días y el año sobre 365 días. El coste resulta de multiplicar los kWh de cada periodo por el precio del kWh indicado. Los resultados son una estimación.
             </p>
           </div>
         </div>
@@ -137,42 +172,60 @@
     </div>
   </section>
 
-  <section class="section section-alt" aria-labelledby="guia-heading">
+  <!-- ================= EJEMPLO ================= -->
+  <section class="section section-alt" aria-labelledby="ejemplo-heading">
     <div class="container">
+      <h2 id="ejemplo-heading">Un ejemplo rápido</h2>
+      <div class="example-box">
+        <h3>1500 W × 4 horas/día × 0,18 €/kWh</h3>
+        <p>Un aparato de 1500 W usado 4 horas al día, con un precio de 0,18 €/kWh, consume aproximadamente:</p>
+        <div class="example-result">
+          <div>
+            <strong>6 kWh</strong>
+            <span>al día</span>
+          </div>
+          <div>
+            <strong>1,08 €</strong>
+            <span>al día</span>
+          </div>
+        </div>
+        <p>Prueba estos mismos valores en la calculadora de arriba para ver también el resultado mensual y anual.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO EDUCATIVO ================= -->
+  <section class="section" aria-labelledby="guia-heading">
+    <div class="container">
+      <h2 id="guia-heading">Guía completa: cómo calcular el consumo eléctrico</h2>
       <div class="prose">
-        <h2 id="guia-heading">Cómo calcular el consumo eléctrico de un aparato</h2>
+        <h3>Cómo calcular el consumo eléctrico de un aparato</h3>
         <p>
-          Calcular el consumo eléctrico de un aparato solo requiere tres datos: su potencia en vatios, las horas que lo utilizas al día y el precio que pagas por cada kWh. La fórmula básica consiste en pasar la potencia de vatios a kilovatios dividiendo entre 1000, y multiplicar ese valor por las horas de uso diario. El resultado son los kWh consumidos ese día. A partir de ahí, basta con multiplicar por 30 para obtener una estimación mensual, o por 365 para una estimación anual.
-        </p>
-        <p>
-          Por ejemplo, si un aparato tiene una potencia de 1500 W y lo usas 4 horas al día, el cálculo sería: (1500 ÷ 1000) × 4 = 6 kWh al día. Ese mismo razonamiento, aplicado a distintos aparatos de tu casa, te permite comparar cuáles pesan más en tu factura y cuáles apenas influyen.
+          Calcular el consumo eléctrico de un aparato solo requiere tres datos: su potencia en vatios, las horas que lo utilizas al día y el precio que pagas por cada kWh. Se transforma la potencia de vatios a kilovatios dividiendo entre 1000, y se multiplica ese valor por las horas de uso diario. El resultado son los kWh consumidos ese día. A partir de ahí, basta con multiplicar por 30 para obtener una estimación mensual, o por 365 para una estimación anual.
         </p>
 
-        <h3>Del consumo en kWh al coste en euros</h3>
+        <h3>Qué significa kWh</h3>
         <p>
-          Una vez que tienes los kWh consumidos, el coste se obtiene multiplicando esa cantidad por el precio del kWh de tu tarifa. Así, el coste diario es el resultado de multiplicar los kWh diarios por el precio, y lo mismo se aplica para obtener el coste mensual y el coste anual a partir de sus respectivos consumos.
+          El kWh, o kilovatio-hora, es la unidad que mide la energía eléctrica consumida a lo largo de un periodo de tiempo, y es la unidad que aparece en tu factura de la luz para calcular el importe a pagar. No hay que confundirlo con el vatio, que mide la potencia instantánea de un aparato, es decir, la energía que necesita en cada momento para funcionar, con independencia del tiempo que lo tengas encendido.
         </p>
 
-        <h2>Qué es un kWh</h2>
+        <h3>Diferencia entre W, kW y kWh</h3>
         <p>
-          Para entender bien el resultado de la calculadora conviene distinguir entre tres unidades que suelen confundirse: el vatio (W), el kilovatio (kW) y el kilovatio-hora (kWh).
-        </p>
-        <h3>Vatio (W)</h3>
-        <p>
-          El vatio es la unidad de potencia. Indica cuánta energía necesita un aparato en cada instante para funcionar. Es un dato fijo del aparato, no depende de cuánto tiempo lo uses.
-        </p>
-        <h3>Kilovatio (kW)</h3>
-        <p>
-          El kilovatio es simplemente 1000 vatios. Se usa para expresar potencias más grandes de forma más cómoda: un aparato de 1500 W equivale a 1,5 kW.
-        </p>
-        <h3>Kilovatio-hora (kWh)</h3>
-        <p>
-          El kWh es la unidad de energía consumida a lo largo de un periodo de tiempo, y es la que aparece en tu factura de la luz. Un aparato de 1 kW de potencia funcionando durante una hora consume exactamente 1 kWh. La potencia te dice "cuánta energía necesita por segundo"; el kWh te dice "cuánta energía ha gastado en total".
+          El <strong>vatio (W)</strong> es la unidad de potencia: indica cuánta energía necesita un aparato en cada instante. El <strong>kilovatio (kW)</strong> es simplemente 1000 vatios, y se usa para expresar potencias más grandes de forma cómoda: un aparato de 1500 W equivale a 1,5 kW. El <strong>kilovatio-hora (kWh)</strong>, en cambio, es una unidad de energía, no de potencia: mide cuánto ha consumido un aparato a lo largo de un periodo de tiempo. Un aparato de 1 kW funcionando durante una hora consume exactamente 1 kWh.
         </p>
 
-        <h2>Ejemplo práctico de consumo eléctrico</h2>
+        <h3>Fórmula del consumo eléctrico</h3>
         <p>
-          Tomemos el mismo aparato de 1500 W usado 4 horas al día, con un precio de 0,18 €/kWh:
+          La fórmula que utiliza esta calculadora es la siguiente:
+        </p>
+        <p><code>kWh diarios = (Potencia en W ÷ 1000) × Horas de uso al día</code></p>
+        <p>
+          A partir del consumo diario, el consumo mensual se obtiene multiplicando por 30 días, y el consumo anual multiplicando por 365 días. El coste en euros se calcula multiplicando los kWh de cada periodo por el precio del kWh de tu tarifa.
+        </p>
+
+        <h3>Ejemplo práctico</h3>
+        <p>
+          Tomemos un aparato de 1500 W usado 4 horas al día, con un precio de 0,18 €/kWh:
         </p>
         <ul>
           <li><strong>Consumo diario:</strong> (1500 ÷ 1000) × 4 = 6 kWh</li>
@@ -183,133 +236,123 @@
           <li><strong>Coste anual:</strong> 2190 × 0,18 = 394,20 €</li>
         </ul>
         <p>
-          Este ejemplo muestra cómo un aparato de potencia media usado varias horas al día puede suponer un gasto anual considerable. Prueba a introducir los datos reales de tus propios electrodomésticos en la calculadora para ver su impacto concreto.
+          Este ejemplo muestra cómo un aparato de potencia media usado varias horas al día puede suponer un gasto anual considerable. Prueba con los datos reales de tus propios electrodomésticos en la calculadora para ver su impacto concreto.
         </p>
 
-        <h2>Cómo saber cuánto estás pagando</h2>
+        <h3>Cómo calcular cuánto cuesta utilizar un electrodoméstico</h3>
         <p>
-          El precio del kWh no es el mismo para todos los usuarios: depende de la tarifa contratada, de si tienes discriminación horaria (precios distintos según el momento del día) y de las condiciones del mercado eléctrico en cada momento. Para usar un dato realista en esta calculadora, lo más fiable es consultar tu última factura de la luz y localizar el precio medio del término de energía, expresado en €/kWh. Si tu tarifa tiene varios tramos horarios, puedes calcular el consumo con el precio de cada tramo por separado para afinar más el resultado.
+          El procedimiento es el mismo para cualquier electrodoméstico: consulta su potencia en la etiqueta o el manual, estima cuántas horas al día lo usas de media y aplica la fórmula anterior. Para aparatos que no funcionan todos los días de la misma manera, como una lavadora o un horno, puedes calcular el consumo de un solo uso y multiplicarlo por el número de veces que lo utilizas a la semana o al mes, en lugar de usar un promedio de horas diarias.
         </p>
 
-        <h2>Cómo reducir el consumo eléctrico en casa</h2>
+        <h3>Cómo reducir el consumo eléctrico</h3>
         <p>
-          Conocer el consumo de cada aparato es el primer paso para decidir dónde merece la pena actuar. Algunas medidas prácticas y realistas:
+          Conocer el consumo de cada aparato es el primer paso para decidir dónde merece la pena actuar. Algunas medidas prácticas: evita dejar aparatos en modo <em>stand by</em>, ya que sumados durante todo el año representan una cantidad apreciable; ajusta el termostato de la calefacción y del aire acondicionado a temperaturas moderadas, pues cada grado de diferencia afecta de forma notable al consumo; sustituye la iluminación por bombillas LED, que consumen bastante menos para ofrecer la misma luz; y utiliza lavadora, lavavajillas o secadora con la carga completa, aprovechando las horas más económicas si tu tarifa tiene discriminación horaria.
         </p>
-        <ul>
-          <li>Evita dejar aparatos en modo <em>stand by</em>; de forma individual consumen poco, pero sumados durante todo el año representan una cantidad apreciable.</li>
-          <li>Ajusta el termostato de la calefacción y del aire acondicionado a temperaturas moderadas, ya que cada grado de más o de menos afecta de forma notable al consumo.</li>
-          <li>Sustituye la iluminación por bombillas LED, que consumen bastante menos que las incandescentes o halógenas para ofrecer la misma luz.</li>
-          <li>Utiliza lavadora, lavavajillas y secadora con la carga completa y, si tu tarifa tiene tramos horarios, en las horas más económicas.</li>
-          <li>Revisa la etiqueta energética antes de comprar un electrodoméstico nuevo, sobre todo si va a estar en uso muchas horas al día, como una nevera.</li>
-        </ul>
 
-        <h2>Electrodomésticos que suelen consumir más</h2>
+        <h3>Factores que hacen variar el coste</h3>
         <p>
-          No todos los aparatos tienen el mismo peso en la factura. Estos son algunos de los que habitualmente más influyen, ya sea por su potencia elevada o por las horas que suelen estar en funcionamiento:
+          El coste final depende de varios factores además del consumo del aparato: el precio del kWh de tu tarifa, que cambia según el mercado eléctrico y el tipo de contrato; si tienes discriminación horaria, con precios distintos según el momento del día; la potencia contratada, que se factura aparte del consumo; y los impuestos y peajes de acceso regulados, que no dependen del uso de un aparato en concreto. Por eso, el resultado de esta calculadora debe entenderse como una estimación del coste de energía, no como el total exacto de tu factura.
         </p>
-        <h3>Aire acondicionado</h3>
-        <p>Su consumo depende mucho de la potencia del equipo, la temperatura elegida y las horas de uso, especialmente en los meses más calurosos.</p>
-        <h3>Horno</h3>
-        <p>Tiene una potencia elevada, aunque su impacto total depende de cuántas veces a la semana se usa y durante cuánto tiempo.</p>
-        <h3>Vitrocerámica</h3>
-        <p>Al igual que el horno, su potencia instantánea es alta, por lo que el tiempo de cocinado influye directamente en el consumo.</p>
-        <h3>Secadora</h3>
-        <p>Es uno de los electrodomésticos con mayor potencia del hogar; usarla solo cuando sea necesario ayuda a reducir su impacto en la factura.</p>
-        <h3>Termo eléctrico</h3>
-        <p>Al mantener el agua caliente durante buena parte del día, su consumo acumulado puede ser mayor de lo que parece a simple vista.</p>
-        <h3>Radiadores eléctricos</h3>
-        <p>Suelen usarse durante muchas horas seguidas en los meses fríos, lo que hace que su coste anual sea uno de los más altos del hogar.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="faq-heading">
+  <!-- ================= FAQ ================= -->
+  <section class="section section-alt" aria-labelledby="faq-heading">
     <div class="container">
+      <h2 id="faq-heading">Preguntas frecuentes sobre el consumo eléctrico</h2>
       <div class="prose">
-        <h2 id="faq-heading">Preguntas frecuentes sobre el consumo eléctrico</h2>
-
         <div class="faq-item">
-          <h3>¿Cómo se calcula el consumo eléctrico?</h3>
-          <p>Se calcula multiplicando la potencia del aparato en kW (vatios dividido entre 1000) por las horas de uso al día. El resultado son los kWh consumidos ese día, que puedes multiplicar por 30 o por 365 para obtener el consumo mensual o anual.</p>
+          <h3>¿Cómo calcular el consumo eléctrico de un aparato?</h3>
+          <p>Se multiplica la potencia en kW (vatios entre 1000) por las horas de uso al día. El resultado son los kWh diarios, que puedes multiplicar por 30 o por 365 para el consumo mensual o anual.</p>
         </div>
-
         <div class="faq-item">
           <h3>¿Qué significa kWh?</h3>
-          <p>kWh son las siglas de kilovatio-hora, la unidad que mide la energía eléctrica consumida durante un periodo de tiempo. Es la unidad que se utiliza en las facturas de la luz para calcular el importe a pagar.</p>
+          <p>kWh son las siglas de kilovatio-hora, la unidad que mide la energía eléctrica consumida durante un periodo de tiempo, y la que se usa en las facturas de la luz.</p>
         </div>
-
         <div class="faq-item">
-          <h3>¿Cuánto cuesta utilizar un aparato de 1000 W durante una hora?</h3>
-          <p>Un aparato de 1000 W (1 kW) funcionando una hora consume 1 kWh. El coste resultante depende del precio del kWh de tu tarifa: basta con multiplicar 1 kWh por ese precio para obtener el coste de esa hora de uso.</p>
+          <h3>¿Cuánto consume un aparato de 1000 W?</h3>
+          <p>Un aparato de 1000 W (1 kW) funcionando una hora consume 1 kWh. El coste de esa hora se obtiene multiplicando 1 kWh por el precio del kWh de tu tarifa.</p>
         </div>
-
+        <div class="faq-item">
+          <h3>¿Dónde puedo encontrar los vatios de mi electrodoméstico?</h3>
+          <p>La potencia en vatios suele aparecer en la etiqueta de características técnicas, en el manual de instrucciones o grabada cerca del cable de alimentación del aparato.</p>
+        </div>
         <div class="faq-item">
           <h3>¿La calculadora incluye impuestos?</h3>
-          <p>No. Esta calculadora ofrece una estimación basada únicamente en el precio del kWh que introduces. No incluye impuestos, peajes ni otros cargos que puedan añadirse en tu factura real.</p>
+          <p>No. Esta calculadora estima únicamente el coste de la energía según el precio del kWh que introduces, sin impuestos, peajes ni otros cargos de la factura.</p>
         </div>
-
         <div class="faq-item">
-          <h3>¿Por qué mi factura real puede ser diferente?</h3>
-          <p>Además del consumo de energía, una factura eléctrica incluye conceptos como la potencia contratada, impuestos, peajes de acceso y otros cargos regulados, que no dependen del uso de un aparato en concreto. Por eso el resultado de esta calculadora es una estimación del término de energía, no el total de la factura.</p>
-        </div>
-
-        <div class="faq-item">
-          <h3>¿Cómo puedo saber la potencia de un electrodoméstico?</h3>
-          <p>La potencia en vatios suele aparecer en la etiqueta de características técnicas del aparato, en su manual de instrucciones o grabada en la propia carcasa, normalmente cerca del cable de alimentación.</p>
+          <h3>¿Por qué el resultado puede ser diferente de mi factura?</h3>
+          <p>La factura real incluye también la potencia contratada, impuestos y peajes de acceso, además del consumo de todos los aparatos de tu casa. El resultado de esta calculadora es una estimación del coste de energía de un único aparato, no el total de tu factura.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ================= OTRAS CALCULADORAS ================= -->
+  <section class="section" aria-labelledby="otras-heading">
+    <div class="container">
+      <h2 id="otras-heading">Otras calculadoras que te pueden interesar</h2>
+      <div class="card-grid">
+        <article class="calc-card is-soon">
+          <span class="calc-badge">€/m</span>
+          <h3>Coste de electrodomésticos</h3>
+          <p>Calcula cuánto cuesta utilizar tus electrodomésticos.</p>
+          <span class="btn btn-disabled" aria-disabled="true">Próximamente</span>
+        </article>
+
+        <article class="calc-card is-soon">
+          <span class="calc-badge">BTU</span>
+          <h3>Aire acondicionado</h3>
+          <p>Calcula la potencia necesaria para climatizar una habitación.</p>
+          <span class="btn btn-disabled" aria-disabled="true">Próximamente</span>
+        </article>
+
+        <article class="calc-card is-soon">
+          <span class="calc-badge">€</span>
+          <h3>Presupuesto del hogar</h3>
+          <p>Organiza tus gastos mensuales.</p>
+          <span class="btn btn-disabled" aria-disabled="true">Próximamente</span>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">+</span>
+          <h3>Todas las calculadoras</h3>
+          <p>Consulta el listado completo de herramientas disponibles y próximas.</p>
+          <a class="btn btn-primary btn-sm" href="../index.html#calculadoras">Ver todas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-band" aria-labelledby="cta-heading">
+    <div class="container cta-inner">
+      <h2 id="cta-heading">¿Quieres explorar más calculadoras del hogar?</h2>
+      <a class="btn btn-primary btn-lg" href="../index.html#calculadoras">Ver calculadoras</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="../index.html">
-          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M4 17 16 6l12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7 14v12h18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M13 26v-7h6v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>Calculadora<span class="brand-name-alt">Hogar</span></span>
-        </a>
-        <p>Calculadoras gratuitas y artículos claros para entender los gastos y necesidades de tu hogar.</p>
-      </div>
-      <nav class="footer-col" aria-label="Calculadoras">
-        <h2>Calculadoras</h2>
-        <ul>
-          <li><a href="consumo-electrico.html" aria-current="page">Consumo eléctrico</a></li>
-          <li><a href="pintura-necesaria.html">Pintura necesaria</a></li>
-          <li><a href="metros-cuadrados.html">Metros cuadrados</a></li>
-          <li><a href="ahorro-energetico.html">Ahorro energético</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-col" aria-label="Empresa">
-        <h2>Empresa</h2>
-        <ul>
-          <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="../contacto.html">Contacto</a></li>
-          <li><a href="../index.html#articulos">Artículos</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-col" aria-label="Legal">
-        <h2>Legal</h2>
-        <ul>
-          <li><a href="../privacidad.html">Política de privacidad</a></li>
-          <li><a href="../cookies.html">Política de cookies</a></li>
-          <li><a href="../aviso-legal.html">Aviso legal</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <p>© <span id="current-year">2026</span> Cuentas Hogar. Todos los derechos reservados.</p>
-      <p><a href="../privacidad.html">Privacidad</a> · <a href="../cookies.html">Cookies</a> · <a href="../aviso-legal.html">Aviso legal</a></p>
-    </div>
+  <div class="container footer-inner">
+    <div class="footer-brand">Cuentas<span>Hogar</span></div>
+
+    <nav class="footer-nav" aria-label="Enlaces de pie de página">
+      <a href="../sobre-nosotros.html">Sobre nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+      <a href="../privacidad.html">Privacidad</a>
+      <a href="../cookies.html">Cookies</a>
+      <a href="../aviso-legal.html">Aviso legal</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 Cuentas Hogar</p>
   </div>
 </footer>
 
-<script src="../js/main.js" defer></script>
+<script src="../main.js" defer></script>
 <script>
 (function () {
   "use strict";
