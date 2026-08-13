@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Consumo de Agua en Casa | Cuentas Hogar</title>
+<meta name="description" content="Calculadora de consumo de agua gratuita: estima los litros de agua que gasta tu hogar al día, al mes y al año según tus duchas, cisterna, grifos, lavadora y lavavajillas.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cuentashogar.com/calculadoras/consumo-agua.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuentas Hogar">
+<meta property="og:title" content="Calculadora de Consumo de Agua en Casa | Cuentas Hogar">
+<meta property="og:description" content="Estima el consumo de agua de tu hogar en litros y metros cúbicos al día, al mes y al año, según tus hábitos reales.">
+<meta property="og:url" content="https://cuentashogar.com/calculadoras/consumo-agua.html">
+<meta name="theme-color" content="#f5f8f6">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cuentashogar.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://cuentashogar.com/#calculadoras" },
+    { "@type": "ListItem", "position": 3, "name": "Consumo de agua", "item": "https://cuentashogar.com/calculadoras/consumo-agua.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cómo calcular el consumo de agua de una casa?", "acceptedAnswer": { "@type": "Answer", "text": "Se suma el consumo estimado de cada uso doméstico (duchas, cisterna, grifos, lavadora y lavavajillas), calculado a partir del número de personas, la frecuencia de uso, la duración y el caudal de cada aparato o punto de agua." } },
+    { "@type": "Question", "name": "¿Cuántos litros gasta una ducha?", "acceptedAnswer": { "@type": "Answer", "text": "Depende de la duración de la ducha y del caudal del cabezal, que varía según la instalación. Se calcula multiplicando los minutos de la ducha por el caudal en litros por minuto del cabezal concreto que se utilice." } },
+    { "@type": "Question", "name": "¿Cómo calcular el consumo mensual de agua?", "acceptedAnswer": { "@type": "Answer", "text": "Se multiplica el consumo diario estimado por el número de días del mes. Esta calculadora utiliza 30 días como aproximación para el cálculo mensual." } },
+    { "@type": "Question", "name": "¿Cómo pasar litros a metros cúbicos?", "acceptedAnswer": { "@type": "Answer", "text": "Se divide la cantidad de litros entre 1000, ya que 1 metro cúbico equivale a 1000 litros." } },
+    { "@type": "Question", "name": "¿Cuántos litros son 1 m³?", "acceptedAnswer": { "@type": "Answer", "text": "1 metro cúbico equivale a 1000 litros de agua." } },
+    { "@type": "Question", "name": "¿Por qué mi consumo real puede ser diferente?", "acceptedAnswer": { "@type": "Answer", "text": "Porque el resultado es una estimación basada en los datos que introduces. El consumo real depende de hábitos variables día a día, del caudal real de tus grifos y cabezales, de fugas, y de usos puntuales no contemplados en el cálculo." } },
+    { "@type": "Question", "name": "¿La calculadora incluye el coste de la factura?", "acceptedAnswer": { "@type": "Answer", "text": "No. Las tarifas de agua varían según el municipio, la empresa suministradora, los tramos de consumo, las cuotas fijas y los impuestos, por lo que esta calculadora no estima ningún coste económico." } },
+    { "@type": "Question", "name": "¿Cómo puedo reducir el consumo de agua?", "acceptedAnswer": { "@type": "Answer", "text": "Reducir la duración de las duchas, instalar cabezales y grifos de bajo caudal, usar la lavadora y el lavavajillas con carga completa, y revisar posibles fugas son algunas de las medidas más habituales para reducir el consumo doméstico." } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">Cuentas<span>Hogar</span></a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#calculadoras" aria-current="page">Calculadoras</a></li>
+        <li><a href="../index.html#guias">Guías</a></li>
+        <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="../index.html#calculadoras">Ver calculadoras</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ================= INTRO / BREADCRUMB ================= -->
+  <section class="page-intro">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Miga de pan">
+        <a href="../index.html">Inicio</a> &gt;
+        <a href="../index.html#calculadoras">Calculadoras</a> &gt;
+        <span class="current" aria-current="page">Consumo de agua</span>
+      </nav>
+      <h1>Calculadora de consumo de agua en el hogar</h1>
+      <p>Estima cuántos litros de agua consume tu hogar al día, al mes y al año a partir de tus hábitos reales: duchas, cisterna, grifos, lavadora y lavavajillas. También puedes ver nuestras calculadoras de <a href="consumo-electrico.html">consumo eléctrico</a>, <a href="pintura.html">pintura necesaria</a>, <a href="metros-cuadrados.html">metros cuadrados</a> y <a href="aire-acondicionado.html">aire acondicionado</a>.</p>
+    </div>
+  </section>
+
+  <!-- ================= CALCULADORA ================= -->
+  <section class="section" id="calculadora" aria-labelledby="calc-heading">
+    <div class="container">
+      <h2 id="calc-heading">Calcula tu consumo de agua</h2>
+
+      <div class="calc-tool-grid">
+        <div class="calc-panel">
+          <h3>Datos del hogar</h3>
+          <form id="calc-form" novalidate>
+            <div class="form-group" id="row-personas">
+              <label for="personas">Número de personas en el hogar</label>
+              <input type="number" id="personas" name="personas" inputmode="numeric" min="1" step="1" placeholder="3">
+              <span class="field-error" id="error-personas" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Duchas</p>
+
+            <div class="form-group" id="row-duchasPorPersona">
+              <label for="duchasPorPersona">Duchas por persona al día</label>
+              <input type="number" id="duchasPorPersona" name="duchasPorPersona" inputmode="decimal" min="0" step="any" placeholder="1">
+              <span class="field-error" id="error-duchasPorPersona" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-duracionDucha">
+              <label for="duracionDucha">Duración media de cada ducha (minutos)</label>
+              <input type="number" id="duracionDucha" name="duracionDucha" inputmode="decimal" min="0" step="any" placeholder="6">
+              <span class="field-error" id="error-duracionDucha" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-caudalDucha">
+              <label for="caudalDucha">Caudal de la ducha (litros/minuto)</label>
+              <input type="number" id="caudalDucha" name="caudalDucha" inputmode="decimal" min="0" step="any" value="8">
+              <span class="form-hint">Valor orientativo editable. El caudal real depende del cabezal y de la instalación de cada vivienda.</span>
+              <span class="field-error" id="error-caudalDucha" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Cisterna</p>
+
+            <div class="form-group" id="row-cisternasPorPersona">
+              <label for="cisternasPorPersona">Descargas de cisterna por persona al día</label>
+              <input type="number" id="cisternasPorPersona" name="cisternasPorPersona" inputmode="decimal" min="0" step="any" placeholder="4">
+              <span class="field-error" id="error-cisternasPorPersona" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-litrosPorDescarga">
+              <label for="litrosPorDescarga">Litros por descarga de cisterna</label>
+              <input type="number" id="litrosPorDescarga" name="litrosPorDescarga" inputmode="decimal" min="0" step="any" value="6">
+              <span class="form-hint">Valor orientativo editable. Varía según el modelo y la antigüedad de la cisterna.</span>
+              <span class="field-error" id="error-litrosPorDescarga" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Grifos</p>
+
+            <div class="form-group" id="row-minutosGrifo">
+              <label for="minutosGrifo">Uso de grifos por persona al día (minutos)</label>
+              <input type="number" id="minutosGrifo" name="minutosGrifo" inputmode="decimal" min="0" step="any" placeholder="5">
+              <span class="field-error" id="error-minutosGrifo" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-caudalGrifo">
+              <label for="caudalGrifo">Caudal del grifo (litros/minuto)</label>
+              <input type="number" id="caudalGrifo" name="caudalGrifo" inputmode="decimal" min="0" step="any" value="6">
+              <span class="form-hint">Valor orientativo editable. Depende del grifo, el aireador y la presión de la instalación.</span>
+              <span class="field-error" id="error-caudalGrifo" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Lavadora</p>
+
+            <div class="form-group" id="row-ciclosLavadora">
+              <label for="ciclosLavadora">Ciclos de lavadora por semana</label>
+              <input type="number" id="ciclosLavadora" name="ciclosLavadora" inputmode="decimal" min="0" step="any" placeholder="4">
+              <span class="field-error" id="error-ciclosLavadora" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-litrosLavadora">
+              <label for="litrosLavadora">Litros por ciclo de lavadora</label>
+              <input type="number" id="litrosLavadora" name="litrosLavadora" inputmode="decimal" min="0" step="any" value="50">
+              <span class="form-hint">Valor orientativo editable. Consulta la ficha técnica de tu lavadora y el programa que utilices habitualmente.</span>
+              <span class="field-error" id="error-litrosLavadora" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Lavavajillas</p>
+
+            <div class="form-group" id="row-ciclosLavavajillas">
+              <label for="ciclosLavavajillas">Ciclos de lavavajillas por semana</label>
+              <input type="number" id="ciclosLavavajillas" name="ciclosLavavajillas" inputmode="decimal" min="0" step="any" placeholder="3">
+              <span class="field-error" id="error-ciclosLavavajillas" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-litrosLavavajillas">
+              <label for="litrosLavavajillas">Litros por ciclo de lavavajillas</label>
+              <input type="number" id="litrosLavavajillas" name="litrosLavavajillas" inputmode="decimal" min="0" step="any" value="15">
+              <span class="form-hint">Valor orientativo editable. Consulta la ficha técnica de tu lavavajillas y el programa que utilices habitualmente.</span>
+              <span class="field-error" id="error-litrosLavavajillas" role="alert"></span>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Calcular consumo</button>
+              <button class="btn btn-outline" type="button" id="btn-limpiar">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="calc-panel" id="resultados" aria-live="polite">
+          <h3>Resultado</h3>
+
+          <div id="result-empty" class="result-placeholder">
+            Completa los datos de tu hogar y pulsa «Calcular consumo» para ver la estimación en litros y m³.
+          </div>
+
+          <div id="result-content" hidden>
+            <div class="result-group">
+              <h4>Consumo diario por uso</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">Duchas</span>
+                  <span class="result-value" id="res-duchas">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Cisterna</span>
+                  <span class="result-value" id="res-cisterna">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Grifos</span>
+                  <span class="result-value" id="res-grifos">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Lavadora (promedio)</span>
+                  <span class="result-value" id="res-lavadora">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Lavavajillas (promedio)</span>
+                  <span class="result-value" id="res-lavavajillas">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-total">
+              <span class="result-total-label">Consumo total diario</span>
+              <span class="result-total-value" id="res-diario">—</span>
+            </div>
+
+            <div class="result-group">
+              <h4>Estimación por periodo</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">Litros al mes</span>
+                  <span class="result-value" id="res-mensual-l">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Litros al año</span>
+                  <span class="result-value" id="res-anual-l">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">m³ al mes</span>
+                  <span class="result-value" id="res-mensual-m3">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">m³ al año</span>
+                  <span class="result-value" id="res-anual-m3">—</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="purchase-tip">
+              Este resultado es una estimación basada en los datos que has introducido, no en una medición real. No incluye el coste económico del agua, ya que las tarifas varían según el municipio, la empresa suministradora, los tramos de consumo, las cuotas fijas y los impuestos. Más adelante podríamos añadir una calculadora que estime el coste a partir de una tarifa que introduzcas tú.
+            </p>
+
+            <p class="formula-note">
+              Cálculo usado: consumo de cada uso × personas (según corresponda), lavadora y lavavajillas prorrateados de ciclos por semana a un promedio diario (÷7), <code>litros al mes = litros al día × 30</code> (aproximación), <code>litros al año = litros al día × 365</code>, y <code>1 m³ = 1000 litros</code>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO EDUCATIVO ================= -->
+  <section class="section section-alt" aria-labelledby="guia-heading">
+    <div class="container">
+      <h2 id="guia-heading">Guía completa: cómo estimar el consumo de agua del hogar</h2>
+      <div class="prose">
+
+        <h3>Cómo calcular el consumo de agua de una vivienda</h3>
+        <p>
+          El consumo de agua de una vivienda es la suma de todos los usos individuales que se dan a lo largo del día: duchas, cisterna, grifos, lavadora, lavavajillas y cualquier otro uso doméstico. Para estimarlo, se calcula por separado el consumo aproximado de cada uso, teniendo en cuenta cuántas personas viven en la casa y con qué frecuencia y duración se realiza cada actividad, y después se suman todos los resultados parciales para obtener el consumo diario, mensual y anual del hogar completo.
+        </p>
+
+        <h3>Cómo calcular el consumo de una ducha</h3>
+        <p>
+          El consumo de una ducha depende de dos factores principales: cuánto dura y qué caudal tiene el cabezal por el que sale el agua. La fórmula orientativa es:
+        </p>
+        <p><code>Litros por ducha = duración (min) × caudal (L/min)</code></p>
+        <p>
+          Multiplicando ese resultado por el número de duchas al día de cada persona y por el número de personas del hogar se obtiene el consumo diario aproximado de duchas de toda la vivienda.
+        </p>
+
+        <h3>Cómo influye el caudal</h3>
+        <p>
+          El caudal, medido en litros por minuto, indica cuánta agua sale por un punto (ducha, grifo) en cada minuto de uso. No es un valor fijo: depende del cabezal o grifo instalado, de si tiene reductor de caudal o aireador, y de la presión de la instalación de la vivienda. Por eso esta calculadora te permite editar el caudal de la ducha y del grifo en lugar de asumir un valor único para todas las viviendas; si no conoces el caudal real, puedes dejar el valor orientativo que aparece por defecto, sabiendo que es solo una referencia.
+        </p>
+
+        <h3>Consumo de cisternas</h3>
+        <p>
+          El consumo de la cisterna del inodoro se calcula multiplicando el número de descargas al día por persona por los litros que gasta cada descarga, y por el número de personas del hogar. Los litros por descarga varían según el modelo de cisterna: las más antiguas suelen gastar más agua por descarga que los modelos actuales con doble pulsador o descarga reducida, por lo que este valor también es editable en el formulario.
+        </p>
+
+        <h3>Consumo de grifos</h3>
+        <p>
+          El uso de grifos —para lavarse las manos, cepillarse los dientes, cocinar o fregar a mano, entre otros— se estima multiplicando los minutos de uso al día por persona por el caudal del grifo en litros por minuto, y por el número de personas del hogar. Este consumo puede variar mucho según el hábito de cada persona, por ejemplo si se deja el grifo abierto mientras se hacen otras tareas o si se cierra mientras no se necesita el agua.
+        </p>
+
+        <h3>Lavadora y lavavajillas</h3>
+        <p>
+          A diferencia de las duchas, la cisterna o los grifos, la lavadora y el lavavajillas no se usan necesariamente todos los días, sino un número determinado de veces por semana. Por eso esta calculadora te pide el número de ciclos semanales y los litros que consume cada ciclo, y reparte ese consumo entre los siete días de la semana para obtener un promedio diario que se pueda sumar al resto de usos. El consumo por ciclo depende del modelo del electrodoméstico y del programa elegido, así que conviene consultar su ficha técnica si quieres un dato más preciso.
+        </p>
+
+        <h3>Diferencia entre litros y metros cúbicos</h3>
+        <p>
+          El litro es la unidad habitual para hablar de pequeñas cantidades de agua, como el consumo de una ducha o un grifo. El metro cúbico (m³) es la unidad que se suele utilizar en las facturas de agua para medir consumos más grandes, como el total mensual o anual de una vivienda. Ambas unidades miden lo mismo, un volumen de agua, pero a escalas distintas.
+        </p>
+
+        <h3>Cómo pasar litros a m³</h3>
+        <p>
+          La conversión es sencilla:
+        </p>
+        <p><code>1 m³ = 1000 litros</code></p>
+        <p>
+          Para pasar de litros a metros cúbicos, basta con dividir la cantidad de litros entre 1000. Por ejemplo, 4500 litros equivalen a 4,5 m³. Esta calculadora aplica esta misma conversión sobre los resultados mensual y anual para mostrarte ambas unidades.
+        </p>
+
+        <h3>Cómo interpretar una factura de agua sin asumir tarifas universales</h3>
+        <p>
+          Las facturas de agua suelen expresar el consumo en m³ y aplican tarifas que varían mucho según el municipio, la empresa suministradora, los tramos de consumo, las cuotas fijas de abastecimiento y saneamiento, y los impuestos correspondientes. No existe una tarifa única aplicable a todos los hogares, por lo que esta calculadora se limita a estimar el volumen de agua consumido, sin traducirlo a un coste económico. Para conocer el precio real de tu consumo, la referencia más fiable es tu propia factura o la información publicada por tu empresa suministradora.
+        </p>
+
+        <h3>Hábitos que pueden reducir el consumo</h3>
+        <p>
+          Algunas medidas habituales para reducir el consumo doméstico de agua son: acortar la duración de las duchas, instalar cabezales de ducha y grifos de bajo caudal o con aireador, cerrar el grifo mientras no se está usando directamente el agua (al enjabonarse o cepillarse los dientes, por ejemplo), utilizar la lavadora y el lavavajillas con la carga completa en lugar de con cargas parciales, y revisar periódicamente que no existan fugas o goteos en cisternas y grifos, ya que pueden suponer un consumo constante que pasa desapercibido.
+        </p>
+
+        <h3>Por qué dos hogares con el mismo número de personas pueden consumir cantidades muy diferentes</h3>
+        <p>
+          El número de personas es solo uno de los factores que determinan el consumo de agua de un hogar. Dos viviendas con el mismo número de habitantes pueden tener hábitos de ducha muy distintos, cabezales y grifos con caudales diferentes, cisternas más o menos eficientes, y una frecuencia de uso de lavadora y lavavajillas totalmente distinta. Por eso esta calculadora te pide tus propios datos en lugar de ofrecer una cifra fija por persona: el resultado se ajusta a tus hábitos reales, no a una media genérica.
+        </p>
+
+        <h3>Ejemplo práctico</h3>
+        <p>
+          Supongamos un hogar de 3 personas, con 1 ducha por persona al día de 6 minutos con un caudal de 8 L/min, 4 descargas de cisterna por persona al día de 6 litros, 5 minutos de grifo por persona al día con un caudal de 6 L/min, 4 ciclos de lavadora a la semana de 50 litros, y 3 ciclos de lavavajillas a la semana de 15 litros:
+        </p>
+        <ul>
+          <li><strong>Duchas:</strong> 3 × 1 × 6 × 8 = 144 L/día</li>
+          <li><strong>Cisterna:</strong> 3 × 4 × 6 = 72 L/día</li>
+          <li><strong>Grifos:</strong> 3 × 5 × 6 = 90 L/día</li>
+          <li><strong>Lavadora:</strong> (4 × 50) ÷ 7 ≈ 28,6 L/día</li>
+          <li><strong>Lavavajillas:</strong> (3 × 15) ÷ 7 ≈ 6,4 L/día</li>
+          <li><strong>Total diario:</strong> 144 + 72 + 90 + 28,6 + 6,4 = 341 L/día</li>
+          <li><strong>Mensual:</strong> 341 × 30 = 10 230 L ≈ 10,23 m³</li>
+          <li><strong>Anual:</strong> 341 × 365 = 124 465 L ≈ 124,47 m³</li>
+        </ul>
+
+        <h3>Errores frecuentes al estimar el consumo</h3>
+        <p>
+          Algunos errores habituales al calcular el consumo de agua son: asumir un caudal genérico sin comprobar el real de la instalación; olvidar multiplicar por el número de personas del hogar en usos individuales como la ducha o los grifos; calcular la lavadora o el lavavajillas como si se usaran todos los días en lugar de repartir sus ciclos semanales; y confundir litros con metros cúbicos al comparar el resultado con la factura de agua, sin aplicar antes la conversión correspondiente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading">Preguntas frecuentes sobre la calculadora de consumo de agua</h2>
+      <div class="prose">
+        <div class="faq-item">
+          <h3>¿Cómo calcular el consumo de agua de una casa?</h3>
+          <p>Se suma el consumo estimado de cada uso doméstico (duchas, cisterna, grifos, lavadora y lavavajillas), calculado a partir del número de personas, la frecuencia de uso, la duración y el caudal de cada aparato o punto de agua.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuántos litros gasta una ducha?</h3>
+          <p>Depende de la duración de la ducha y del caudal del cabezal, que varía según la instalación. Se calcula multiplicando los minutos de la ducha por el caudal en litros por minuto del cabezal concreto que se utilice.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo calcular el consumo mensual de agua?</h3>
+          <p>Se multiplica el consumo diario estimado por el número de días del mes. Esta calculadora utiliza 30 días como aproximación para el cálculo mensual.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo pasar litros a metros cúbicos?</h3>
+          <p>Se divide la cantidad de litros entre 1000, ya que 1 metro cúbico equivale a 1000 litros.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuántos litros son 1 m³?</h3>
+          <p>1 metro cúbico equivale a 1000 litros de agua.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Por qué mi consumo real puede ser diferente?</h3>
+          <p>Porque el resultado es una estimación basada en los datos que introduces. El consumo real depende de hábitos variables día a día, del caudal real de tus grifos y cabezales, de fugas, y de usos puntuales no contemplados en el cálculo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿La calculadora incluye el coste de la factura?</h3>
+          <p>No. Las tarifas de agua varían según el municipio, la empresa suministradora, los tramos de consumo, las cuotas fijas y los impuestos, por lo que esta calculadora no estima ningún coste económico.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo puedo reducir el consumo de agua?</h3>
+          <p>Reducir la duración de las duchas, instalar cabezales y grifos de bajo caudal, usar la lavadora y el lavavajillas con carga completa, y revisar posibles fugas son algunas de las medidas más habituales para reducir el consumo doméstico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OTRAS CALCULADORAS ================= -->
+  <section class="section" aria-labelledby="otras-heading">
+    <div class="container">
+      <h2 id="otras-heading">Otras calculadoras que te pueden interesar</h2>
+      <div class="card-grid">
+        <article class="calc-card">
+          <span class="calc-badge">kWh</span>
+          <h3>Consumo eléctrico</h3>
+          <p>Calcula cuánto consume un aparato y cuánto te cuesta al día, mes y año.</p>
+          <a class="btn btn-primary btn-sm" href="consumo-electrico.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">L</span>
+          <h3>Pintura necesaria</h3>
+          <p>Calcula cuántos litros de pintura necesitas para una habitación.</p>
+          <a class="btn btn-primary btn-sm" href="pintura.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">m²</span>
+          <h3>Metros cuadrados</h3>
+          <p>Calcula superficies fácilmente.</p>
+          <a class="btn btn-primary btn-sm" href="metros-cuadrados.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">BTU</span>
+          <h3>Aire acondicionado</h3>
+          <p>Calcula la potencia necesaria para climatizar una habitación.</p>
+          <a class="btn btn-primary btn-sm" href="aire-acondicionado.html">Calcular</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-band" aria-labelledby="cta-heading">
+    <div class="container cta-inner">
+      <h2 id="cta-heading">¿Quieres explorar más calculadoras del hogar?</h2>
+      <a class="btn btn-primary btn-lg" href="../index.html#calculadoras">Ver calculadoras</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Cuentas<span>Hogar</span></div>
+
+    <nav class="footer-nav" aria-label="Enlaces de pie de página">
+      <a href="../sobre-nosotros.html">Sobre nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+      <a href="../privacidad.html">Privacidad</a>
+      <a href="../cookies.html">Cookies</a>
+      <a href="../aviso-legal.html">Aviso legal</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 Cuentas Hogar</p>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+<script>
+(function () {
+  "use strict";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("calc-form");
+    if (!form) return;
+
+    var fields = {
+      personas: {
+        input: document.getElementById("personas"),
+        row: document.getElementById("row-personas"),
+        error: document.getElementById("error-personas"),
+        label: "el número de personas",
+        integer: true,
+        positive: true
+      },
+      duchasPorPersona: {
+        input: document.getElementById("duchasPorPersona"),
+        row: document.getElementById("row-duchasPorPersona"),
+        error: document.getElementById("error-duchasPorPersona"),
+        label: "las duchas por persona al día"
+      },
+      duracionDucha: {
+        input: document.getElementById("duracionDucha"),
+        row: document.getElementById("row-duracionDucha"),
+        error: document.getElementById("error-duracionDucha"),
+        label: "la duración de la ducha"
+      },
+      caudalDucha: {
+        input: document.getElementById("caudalDucha"),
+        row: document.getElementById("row-caudalDucha"),
+        error: document.getElementById("error-caudalDucha"),
+        label: "el caudal de la ducha"
+      },
+      cisternasPorPersona: {
+        input: document.getElementById("cisternasPorPersona"),
+        row: document.getElementById("row-cisternasPorPersona"),
+        error: document.getElementById("error-cisternasPorPersona"),
+        label: "las descargas de cisterna por persona"
+      },
+      litrosPorDescarga: {
+        input: document.getElementById("litrosPorDescarga"),
+        row: document.getElementById("row-litrosPorDescarga"),
+        error: document.getElementById("error-litrosPorDescarga"),
+        label: "los litros por descarga"
+      },
+      minutosGrifo: {
+        input: document.getElementById("minutosGrifo"),
+        row: document.getElementById("row-minutosGrifo"),
+        error: document.getElementById("error-minutosGrifo"),
+        label: "el uso de grifos por persona"
+      },
+      caudalGrifo: {
+        input: document.getElementById("caudalGrifo"),
+        row: document.getElementById("row-caudalGrifo"),
+        error: document.getElementById("error-caudalGrifo"),
+        label: "el caudal del grifo"
+      },
+      ciclosLavadora: {
+        input: document.getElementById("ciclosLavadora"),
+        row: document.getElementById("row-ciclosLavadora"),
+        error: document.getElementById("error-ciclosLavadora"),
+        label: "los ciclos de lavadora por semana"
+      },
+      litrosLavadora: {
+        input: document.getElementById("litrosLavadora"),
+        row: document.getElementById("row-litrosLavadora"),
+        error: document.getElementById("error-litrosLavadora"),
+        label: "los litros por ciclo de lavadora"
+      },
+      ciclosLavavajillas: {
+        input: document.getElementById("ciclosLavavajillas"),
+        row: document.getElementById("row-ciclosLavavajillas"),
+        error: document.getElementById("error-ciclosLavavajillas"),
+        label: "los ciclos de lavavajillas por semana"
+      },
+      litrosLavavajillas: {
+        input: document.getElementById("litrosLavavajillas"),
+        row: document.getElementById("row-litrosLavavajillas"),
+        error: document.getElementById("error-litrosLavavajillas"),
+        label: "los litros por ciclo de lavavajillas"
+      }
+    };
+
+    var resultEmpty = document.getElementById("result-empty");
+    var resultContent = document.getElementById("result-content");
+
+    function formatLitros(value) {
+      return Math.round(value).toLocaleString("es-ES") + " L";
+    }
+
+    function formatLitrosDecimal(value) {
+      return value.toFixed(1).replace(".", ",") + " L";
+    }
+
+    function formatM3(value) {
+      return value.toFixed(2).replace(".", ",") + " m³";
+    }
+
+    function clearError(field) {
+      field.row.classList.remove("has-error");
+      field.error.textContent = "";
+      field.input.removeAttribute("aria-invalid");
+    }
+
+    function setError(field, message) {
+      field.row.classList.add("has-error");
+      field.error.textContent = message;
+      field.input.setAttribute("aria-invalid", "true");
+    }
+
+    function validateField(field) {
+      var raw = field.input.value.trim().replace(",", ".");
+
+      if (raw === "") {
+        setError(field, "Introduce " + field.label + ".");
+        return null;
+      }
+
+      var value = Number(raw);
+
+      if (Number.isNaN(value)) {
+        setError(field, "Introduce un número válido para " + field.label + ".");
+        return null;
+      }
+
+      if (value < 0) {
+        setError(field, "El valor no puede ser negativo.");
+        return null;
+      }
+
+      if (field.positive && value === 0) {
+        setError(field, "El valor debe ser mayor que 0.");
+        return null;
+      }
+
+      if (field.integer && !Number.isInteger(value)) {
+        setError(field, "Introduce un número entero para " + field.label + ".");
+        return null;
+      }
+
+      clearError(field);
+      return value;
+    }
+
+    function checkCaudalCondicional(usoValue, caudalField, mensaje) {
+      if (usoValue > 0 && caudalField.input.value.trim() !== "" && Number(caudalField.input.value.trim().replace(",", ".")) === 0) {
+        setError(caudalField, mensaje);
+        return false;
+      }
+      return true;
+    }
+
+    function calcular(event) {
+      event.preventDefault();
+
+      var values = {};
+      var hasError = false;
+
+      Object.keys(fields).forEach(function (key) {
+        var value = validateField(fields[key]);
+        if (value === null) {
+          hasError = true;
+        }
+        values[key] = value;
+      });
+
+      if (!hasError) {
+        var usoDucha = values.duchasPorPersona * values.duracionDucha;
+        if (!checkCaudalCondicional(usoDucha, fields.caudalDucha, "Indica un caudal mayor que 0, ya que has indicado uso de ducha.")) {
+          hasError = true;
+        }
+        if (!checkCaudalCondicional(values.cisternasPorPersona, fields.litrosPorDescarga, "Indica unos litros por descarga mayores que 0, ya que has indicado descargas de cisterna.")) {
+          hasError = true;
+        }
+        if (!checkCaudalCondicional(values.minutosGrifo, fields.caudalGrifo, "Indica un caudal mayor que 0, ya que has indicado uso de grifo.")) {
+          hasError = true;
+        }
+        if (!checkCaudalCondicional(values.ciclosLavadora, fields.litrosLavadora, "Indica unos litros por ciclo mayores que 0, ya que has indicado ciclos de lavadora.")) {
+          hasError = true;
+        }
+        if (!checkCaudalCondicional(values.ciclosLavavajillas, fields.litrosLavavajillas, "Indica unos litros por ciclo mayores que 0, ya que has indicado ciclos de lavavajillas.")) {
+          hasError = true;
+        }
+      }
+
+      if (hasError) {
+        resultEmpty.hidden = false;
+        resultContent.hidden = true;
+
+        var firstInvalidKey = Object.keys(fields).find(function (key) {
+          return fields[key].row.classList.contains("has-error");
+        });
+        if (firstInvalidKey) {
+          fields[firstInvalidKey].input.focus();
+        }
+        return;
+      }
+
+      var consumoDuchas = values.personas * values.duchasPorPersona * values.duracionDucha * values.caudalDucha;
+      var consumoCisterna = values.personas * values.cisternasPorPersona * values.litrosPorDescarga;
+      var consumoGrifos = values.personas * values.minutosGrifo * values.caudalGrifo;
+      var consumoLavadora = (values.ciclosLavadora * values.litrosLavadora) / 7;
+      var consumoLavavajillas = (values.ciclosLavavajillas * values.litrosLavavajillas) / 7;
+
+      var totalDiario = consumoDuchas + consumoCisterna + consumoGrifos + consumoLavadora + consumoLavavajillas;
+      var totalMensualL = totalDiario * 30;
+      var totalAnualL = totalDiario * 365;
+      var totalMensualM3 = totalMensualL / 1000;
+      var totalAnualM3 = totalAnualL / 1000;
+
+      document.getElementById("res-duchas").textContent = formatLitrosDecimal(consumoDuchas) + "/día";
+      document.getElementById("res-cisterna").textContent = formatLitrosDecimal(consumoCisterna) + "/día";
+      document.getElementById("res-grifos").textContent = formatLitrosDecimal(consumoGrifos) + "/día";
+      document.getElementById("res-lavadora").textContent = formatLitrosDecimal(consumoLavadora) + "/día";
+      document.getElementById("res-lavavajillas").textContent = formatLitrosDecimal(consumoLavavajillas) + "/día";
+
+      document.getElementById("res-diario").textContent = formatLitrosDecimal(totalDiario) + "/día";
+      document.getElementById("res-mensual-l").textContent = formatLitros(totalMensualL);
+      document.getElementById("res-anual-l").textContent = formatLitros(totalAnualL);
+      document.getElementById("res-mensual-m3").textContent = formatM3(totalMensualM3);
+      document.getElementById("res-anual-m3").textContent = formatM3(totalAnualM3);
+
+      resultEmpty.hidden = true;
+      resultContent.hidden = false;
+    }
+
+    function limpiar() {
+      form.reset();
+      Object.keys(fields).forEach(function (key) {
+        clearError(fields[key]);
+      });
+      resultEmpty.hidden = false;
+      resultContent.hidden = true;
+      fields.personas.input.focus();
+    }
+
+    form.addEventListener("submit", calcular);
+
+    var btnLimpiar = document.getElementById("btn-limpiar");
+    if (btnLimpiar) {
+      btnLimpiar.addEventListener("click", limpiar);
+    }
+
+    Object.keys(fields).forEach(function (key) {
+      fields[key].input.addEventListener("input", function () {
+        if (fields[key].row.classList.contains("has-error")) {
+          clearError(fields[key]);
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
