@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Presupuesto Mensual del Hogar | Cuentas Hogar</title>
+<meta name="description" content="Calculadora de presupuesto del hogar gratuita: organiza tus ingresos y gastos mensuales por categorías y descubre cuánto dinero te queda cada mes.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cuentashogar.com/calculadoras/presupuesto-hogar.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuentas Hogar">
+<meta property="og:title" content="Calculadora de Presupuesto Mensual del Hogar | Cuentas Hogar">
+<meta property="og:description" content="Organiza tus ingresos y gastos mensuales por categorías y descubre cuánto dinero te queda cada mes.">
+<meta property="og:url" content="https://cuentashogar.com/calculadoras/presupuesto-hogar.html">
+<meta name="theme-color" content="#f5f8f6">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cuentashogar.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://cuentashogar.com/#calculadoras" },
+    { "@type": "ListItem", "position": 3, "name": "Presupuesto del hogar", "item": "https://cuentashogar.com/calculadoras/presupuesto-hogar.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cómo hacer un presupuesto mensual?", "acceptedAnswer": { "@type": "Answer", "text": "Se anotan todos los ingresos mensuales y todos los gastos habituales, agrupados por categorías como vivienda, suministros, alimentación o transporte, y se resta el total de gastos al total de ingresos para conocer el saldo mensual disponible." } },
+    { "@type": "Question", "name": "¿Qué gastos debo incluir?", "acceptedAnswer": { "@type": "Answer", "text": "Conviene incluir todos los gastos habituales del hogar: vivienda, suministros, alimentación, transporte, deudas o cuotas, ocio y suscripciones, y cualquier otro gasto recurrente que pagues cada mes." } },
+    { "@type": "Question", "name": "¿Qué diferencia hay entre gastos fijos y variables?", "acceptedAnswer": { "@type": "Answer", "text": "Los gastos fijos se repiten cada mes con un importe similar, como el alquiler o una cuota de préstamo. Los gastos variables cambian de un mes a otro, como el supermercado, el ocio o el combustible, aunque también deben tenerse en cuenta en el presupuesto." } },
+    { "@type": "Question", "name": "¿Cómo calcular cuánto dinero me queda cada mes?", "acceptedAnswer": { "@type": "Answer", "text": "Se resta el total de gastos mensuales al total de ingresos mensuales. Si el resultado es positivo, indica el dinero que queda disponible; si es negativo, indica el déficit mensual." } },
+    { "@type": "Question", "name": "¿Cómo calcular qué porcentaje de mis ingresos gasto?", "acceptedAnswer": { "@type": "Answer", "text": "Se divide el total de gastos entre el total de ingresos y se multiplica por 100. El resultado indica qué parte de tus ingresos se destina a cubrir los gastos que has introducido." } },
+    { "@type": "Question", "name": "¿Debo incluir gastos anuales?", "acceptedAnswer": { "@type": "Answer", "text": "Si tienes gastos que se pagan una o pocas veces al año, como un seguro o un impuesto, puedes dividir su importe entre 12 e incluir esa parte proporcional en tu presupuesto mensual, en la categoría que corresponda." } },
+    { "@type": "Question", "name": "¿Cómo puedo controlar mejor los gastos del hogar?", "acceptedAnswer": { "@type": "Answer", "text": "Revisar el presupuesto con cierta regularidad, comparar los gastos reales con los previstos, e identificar los gastos recurrentes que a veces pasan desapercibidos, como suscripciones o cuotas, ayuda a tener un mejor control del gasto del hogar." } },
+    { "@type": "Question", "name": "¿Esta calculadora ofrece asesoramiento financiero?", "acceptedAnswer": { "@type": "Answer", "text": "No. Esta calculadora es una herramienta informativa para organizar un presupuesto doméstico a partir de los datos que introduces, y no constituye asesoramiento financiero personalizado." } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">Cuentas<span>Hogar</span></a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#calculadoras" aria-current="page">Calculadoras</a></li>
+        <li><a href="../index.html#guias">Guías</a></li>
+        <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="../index.html#calculadoras">Ver calculadoras</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ================= INTRO / BREADCRUMB ================= -->
+  <section class="page-intro">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Miga de pan">
+        <a href="../index.html">Inicio</a> &gt;
+        <a href="../index.html#calculadoras">Calculadoras</a> &gt;
+        <span class="current" aria-current="page">Presupuesto del hogar</span>
+      </nav>
+      <h1>Calculadora de presupuesto mensual del hogar</h1>
+      <p>Organiza tus ingresos y tus gastos mensuales por categorías y descubre cuánto dinero te queda después de cubrir los principales gastos del hogar. También puedes ver nuestras calculadoras de <a href="consumo-electrico.html">consumo eléctrico</a>, <a href="consumo-agua.html">consumo de agua</a> y <a href="coste-electrodomesticos.html">coste de electrodomésticos</a>.</p>
+    </div>
+  </section>
+
+  <!-- ================= CALCULADORA ================= -->
+  <section class="section" id="calculadora" aria-labelledby="calc-heading">
+    <div class="container">
+      <h2 id="calc-heading">Organiza tu presupuesto</h2>
+
+      <div class="calc-tool-grid">
+        <div class="calc-panel">
+          <h3>Ingresos y gastos mensuales</h3>
+          <form id="calc-form" novalidate>
+
+            <p class="field-group-title">Ingresos</p>
+            <div class="form-group" id="row-sueldoPrincipal">
+              <label for="sueldoPrincipal">Sueldo principal</label>
+              <input type="number" id="sueldoPrincipal" name="sueldoPrincipal" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-sueldoPrincipal" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-sueldoSecundario">
+              <label for="sueldoSecundario">Segundo sueldo u otros ingresos</label>
+              <input type="number" id="sueldoSecundario" name="sueldoSecundario" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-sueldoSecundario" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-otrosIngresos">
+              <label for="otrosIngresos">Otros ingresos mensuales</label>
+              <input type="number" id="otrosIngresos" name="otrosIngresos" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-otrosIngresos" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Vivienda</p>
+            <div class="form-group" id="row-alquilerHipoteca">
+              <label for="alquilerHipoteca">Alquiler o hipoteca</label>
+              <input type="number" id="alquilerHipoteca" name="alquilerHipoteca" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-alquilerHipoteca" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-comunidad">
+              <label for="comunidad">Comunidad</label>
+              <input type="number" id="comunidad" name="comunidad" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-comunidad" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-segurosHogar">
+              <label for="segurosHogar">Seguros del hogar</label>
+              <input type="number" id="segurosHogar" name="segurosHogar" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-segurosHogar" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-otrosVivienda">
+              <label for="otrosVivienda">Otros gastos de vivienda</label>
+              <input type="number" id="otrosVivienda" name="otrosVivienda" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-otrosVivienda" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Suministros</p>
+            <div class="form-group" id="row-electricidad">
+              <label for="electricidad">Electricidad</label>
+              <input type="number" id="electricidad" name="electricidad" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-electricidad" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-agua">
+              <label for="agua">Agua</label>
+              <input type="number" id="agua" name="agua" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-agua" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-gasCalefaccion">
+              <label for="gasCalefaccion">Gas o calefacción</label>
+              <input type="number" id="gasCalefaccion" name="gasCalefaccion" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-gasCalefaccion" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-internetTelefono">
+              <label for="internetTelefono">Internet y teléfono</label>
+              <input type="number" id="internetTelefono" name="internetTelefono" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-internetTelefono" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Alimentación</p>
+            <div class="form-group" id="row-supermercado">
+              <label for="supermercado">Supermercado</label>
+              <input type="number" id="supermercado" name="supermercado" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-supermercado" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-comidasFuera">
+              <label for="comidasFuera">Comidas fuera</label>
+              <input type="number" id="comidasFuera" name="comidasFuera" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-comidasFuera" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Transporte</p>
+            <div class="form-group" id="row-combustible">
+              <label for="combustible">Combustible</label>
+              <input type="number" id="combustible" name="combustible" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-combustible" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-transportePublico">
+              <label for="transportePublico">Transporte público</label>
+              <input type="number" id="transportePublico" name="transportePublico" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-transportePublico" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-seguroVehiculo">
+              <label for="seguroVehiculo">Seguro del vehículo</label>
+              <input type="number" id="seguroVehiculo" name="seguroVehiculo" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-seguroVehiculo" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-mantenimientoVehiculo">
+              <label for="mantenimientoVehiculo">Mantenimiento del vehículo</label>
+              <input type="number" id="mantenimientoVehiculo" name="mantenimientoVehiculo" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-mantenimientoVehiculo" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-otrosTransporte">
+              <label for="otrosTransporte">Otros gastos de transporte</label>
+              <input type="number" id="otrosTransporte" name="otrosTransporte" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-otrosTransporte" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Deudas y financiación</p>
+            <div class="form-group" id="row-prestamos">
+              <label for="prestamos">Préstamos</label>
+              <input type="number" id="prestamos" name="prestamos" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-prestamos" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-tarjetas">
+              <label for="tarjetas">Tarjetas de crédito</label>
+              <input type="number" id="tarjetas" name="tarjetas" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-tarjetas" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-otrasCuotas">
+              <label for="otrasCuotas">Otras cuotas</label>
+              <input type="number" id="otrasCuotas" name="otrasCuotas" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-otrasCuotas" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Ocio y suscripciones</p>
+            <div class="form-group" id="row-ocio">
+              <label for="ocio">Ocio</label>
+              <input type="number" id="ocio" name="ocio" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-ocio" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-suscripciones">
+              <label for="suscripciones">Plataformas y suscripciones</label>
+              <input type="number" id="suscripciones" name="suscripciones" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-suscripciones" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-gimnasio">
+              <label for="gimnasio">Gimnasio</label>
+              <input type="number" id="gimnasio" name="gimnasio" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-gimnasio" role="alert"></span>
+            </div>
+            <div class="form-group" id="row-otrosOcio">
+              <label for="otrosOcio">Otros gastos de ocio</label>
+              <input type="number" id="otrosOcio" name="otrosOcio" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-otrosOcio" role="alert"></span>
+            </div>
+
+            <p class="field-group-title">Otros gastos</p>
+            <div class="form-group" id="row-otrosGastos">
+              <label for="otrosGastos">Otros gastos mensuales</label>
+              <input type="number" id="otrosGastos" name="otrosGastos" inputmode="decimal" min="0" step="any" placeholder="0">
+              <span class="field-error" id="error-otrosGastos" role="alert"></span>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Calcular presupuesto</button>
+              <button class="btn btn-outline" type="button" id="btn-limpiar">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="calc-panel" id="resultados" aria-live="polite">
+          <h3>Resultado</h3>
+
+          <div id="result-empty" class="result-placeholder">
+            Completa tus ingresos y gastos, y pulsa «Calcular presupuesto» para ver el resumen mensual.
+          </div>
+
+          <div id="result-content" hidden>
+            <div class="result-group">
+              <h4>Resumen</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">Ingresos totales</span>
+                  <span class="result-value" id="res-ingresos">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Gastos totales</span>
+                  <span class="result-value" id="res-gastos">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-total" id="result-saldo">
+              <span class="result-total-label">Saldo mensual</span>
+              <span class="result-total-value" id="res-saldo">—</span>
+            </div>
+            <p class="purchase-tip" id="res-mensaje"></p>
+
+            <div class="result-group">
+              <h4>Porcentajes sobre tus ingresos</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">Destinado a gastos</span>
+                  <span class="result-value" id="res-pct-gastos">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Restante</span>
+                  <span class="result-value" id="res-pct-restante">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-group">
+              <h4>Gastos por categoría</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">Vivienda</span>
+                  <span class="result-value" id="res-cat-vivienda">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Suministros</span>
+                  <span class="result-value" id="res-cat-suministros">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Alimentación</span>
+                  <span class="result-value" id="res-cat-alimentacion">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Transporte</span>
+                  <span class="result-value" id="res-cat-transporte">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Deudas</span>
+                  <span class="result-value" id="res-cat-deudas">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Ocio y suscripciones</span>
+                  <span class="result-value" id="res-cat-ocio">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Otros gastos</span>
+                  <span class="result-value" id="res-cat-otros">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-group">
+              <h4>Distribución de los gastos</h4>
+              <div class="budget-bars" id="budget-bars">
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Vivienda</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-vivienda"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-vivienda">0 %</span>
+                </div>
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Suministros</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-suministros"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-suministros">0 %</span>
+                </div>
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Alimentación</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-alimentacion"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-alimentacion">0 %</span>
+                </div>
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Transporte</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-transporte"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-transporte">0 %</span>
+                </div>
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Deudas</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-deudas"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-deudas">0 %</span>
+                </div>
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Ocio</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-ocio"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-ocio">0 %</span>
+                </div>
+                <div class="budget-bar-row">
+                  <span class="budget-bar-label">Otros</span>
+                  <div class="budget-bar-track"><div class="budget-bar-fill" id="bar-otros"></div></div>
+                  <span class="budget-bar-pct" id="bar-pct-otros">0 %</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="formula-note">
+              Esta herramienta es informativa y no constituye asesoramiento financiero. Cálculo usado: <code>saldo = ingresos totales − gastos totales</code>, <code>% de gastos = gastos totales ÷ ingresos totales × 100</code>, <code>% restante = saldo positivo ÷ ingresos totales × 100</code>. La distribución por categorías se calcula sobre el total de gastos introducido.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO EDUCATIVO ================= -->
+  <section class="section section-alt" aria-labelledby="guia-heading">
+    <div class="container">
+      <h2 id="guia-heading">Guía completa: cómo organizar un presupuesto mensual del hogar</h2>
+      <div class="prose">
+
+        <h3>Qué es un presupuesto mensual</h3>
+        <p>
+          Un presupuesto mensual es simplemente un registro de todo el dinero que entra y todo el dinero que sale de tu hogar cada mes. Por un lado están los ingresos: el sueldo o los sueldos de la unidad familiar y cualquier otro ingreso regular. Por otro lado están los gastos: vivienda, suministros, alimentación, transporte, deudas, ocio y cualquier otro gasto habitual. Comparar ambos totales te permite saber si te sobra dinero cada mes, si llegas justo, o si gastas más de lo que ingresas.
+        </p>
+
+        <h3>Cómo organizar los gastos del hogar</h3>
+        <p>
+          Organizar los gastos por categorías, como hace esta calculadora, ayuda a ver de un vistazo en qué se va el dinero cada mes. Agrupar partidas similares —vivienda, suministros, alimentación, transporte, deudas, ocio y otros— facilita detectar qué categorías pesan más en el presupuesto y dónde podría haber margen para ajustar si fuera necesario, sin tener que revisar cada gasto suelto por separado.
+        </p>
+
+        <h3>Diferencia entre ingresos y gastos</h3>
+        <p>
+          Los ingresos son el dinero que entra en el hogar: sueldos, pagas extra prorrateadas, ingresos por alquileres u otras fuentes regulares. Los gastos son el dinero que sale: todo lo que se paga cada mes para cubrir la vivienda, los suministros, la alimentación, el transporte, las deudas y el resto de necesidades y gastos personales. El presupuesto mensual pone ambos frente a frente para calcular cuánto queda disponible.
+        </p>
+
+        <h3>Gastos fijos y gastos variables</h3>
+        <p>
+          Los gastos fijos se repiten cada mes con un importe similar y son fáciles de prever: el alquiler o la hipoteca, la cuota de un préstamo, una suscripción o un seguro. Los gastos variables, en cambio, cambian de un mes a otro: el supermercado, el combustible, el ocio o las comidas fuera de casa. Ambos tipos de gasto deben incluirse en el presupuesto, aunque los variables conviene revisarlos con más frecuencia porque son los que más fluctúan.
+        </p>
+
+        <h3>Cómo calcular el saldo mensual</h3>
+        <p>
+          El saldo mensual se calcula restando el total de gastos al total de ingresos:
+        </p>
+        <p><code>Saldo mensual = Ingresos totales − Gastos totales</code></p>
+        <p>
+          Si el resultado es positivo, indica el dinero que queda disponible ese mes una vez cubiertos los gastos introducidos. Si es negativo, indica que los gastos superan a los ingresos, es decir, un déficit mensual.
+        </p>
+
+        <h3>Cómo calcular qué porcentaje de tus ingresos gastas</h3>
+        <p>
+          Para saber qué parte de tus ingresos se destina a gastos, se divide el total de gastos entre el total de ingresos y se multiplica por 100:
+        </p>
+        <p><code>% de gastos = (Gastos totales ÷ Ingresos totales) × 100</code></p>
+        <p>
+          No existe un porcentaje universal que sea adecuado para todas las personas u hogares: depende de la situación de cada uno, del coste de vida de la zona, de las cargas familiares y de muchos otros factores. Este dato es solo una referencia para que entiendas mejor la proporción de tus ingresos que ya tienes comprometida en gastos.
+        </p>
+
+        <h3>Cómo detectar gastos recurrentes</h3>
+        <p>
+          Algunos gastos recurrentes pasan desapercibidos porque son de importe pequeño o se cobran automáticamente, como suscripciones a plataformas, aplicaciones de pago, cuotas de gimnasio o pequeñas comisiones. Revisar los movimientos de tu cuenta bancaria de los últimos meses es una forma habitual de detectar estos gastos y decidir si siguen teniendo sentido en tu presupuesto actual.
+        </p>
+
+        <h3>Cómo organizar suministros</h3>
+        <p>
+          Los suministros —electricidad, agua, gas o calefacción, internet y teléfono— suelen ser gastos fijos mensuales, aunque su importe puede variar según el consumo o la época del año. Si tienes las calculadoras de <a href="consumo-electrico.html">consumo eléctrico</a> o de <a href="consumo-agua.html">consumo de agua</a> de esta web, puedes usarlas para estimar mejor estas partidas antes de introducirlas en tu presupuesto.
+        </p>
+
+        <h3>Cómo incluir deudas y financiación</h3>
+        <p>
+          Las cuotas de préstamos, tarjetas de crédito u otras financiaciones deben incluirse como un gasto fijo más dentro del presupuesto, con el importe mensual que realmente pagas. Tener estas cuotas identificadas por separado, en lugar de mezcladas con otros gastos, ayuda a ver claramente qué parte de tus ingresos está comprometida con deudas.
+        </p>
+
+        <h3>Cómo crear un pequeño margen para gastos imprevistos</h3>
+        <p>
+          Además de los gastos habituales, pueden surgir gastos puntuales o imprevistos: una reparación, una visita médica no cubierta, o un gasto extraordinario. Si tu saldo mensual lo permite, reservar una pequeña cantidad cada mes para este tipo de imprevistos puede ayudarte a no tener que descuadrar el resto del presupuesto cuando aparezcan. Esta calculadora no fija ninguna cantidad recomendada para ese margen, ya que depende de la situación de cada hogar.
+        </p>
+
+        <h3>Ejemplo práctico</h3>
+        <p>
+          Supongamos un hogar con un sueldo principal de 1600 € y otros ingresos de 200 €, y unos gastos de 700 € en vivienda, 180 € en suministros, 350 € en alimentación, 150 € en transporte, 100 € en deudas, 90 € en ocio y suscripciones, y 30 € en otros gastos:
+        </p>
+        <ul>
+          <li><strong>Ingresos totales:</strong> 1600 + 200 = 1800 €</li>
+          <li><strong>Gastos totales:</strong> 700 + 180 + 350 + 150 + 100 + 90 + 30 = 1600 €</li>
+          <li><strong>Saldo mensual:</strong> 1800 − 1600 = 200 €</li>
+          <li><strong>% de ingresos destinado a gastos:</strong> (1600 ÷ 1800) × 100 ≈ 88,9 %</li>
+          <li><strong>% restante:</strong> (200 ÷ 1800) × 100 ≈ 11,1 %</li>
+        </ul>
+        <p>
+          En este ejemplo, el hogar tendría 200 € disponibles al mes después de cubrir los gastos introducidos. Puedes repetir este mismo ejercicio con tus propios datos en la calculadora de arriba.
+        </p>
+
+        <h3>Errores frecuentes al hacer un presupuesto doméstico</h3>
+        <p>
+          Algunos errores habituales al hacer un presupuesto son: olvidar gastos que no se pagan todos los meses, como seguros o impuestos anuales; no incluir gastos pequeños pero recurrentes, como suscripciones; mezclar gastos de distintas categorías sin distinguirlos, lo que dificulta ver dónde se concentra el gasto; y no revisar el presupuesto después de hacerlo una vez, tratándolo como un ejercicio puntual en lugar de una herramienta que conviene actualizar.
+        </p>
+
+        <h3>Cómo revisar el presupuesto cada mes</h3>
+        <p>
+          Un presupuesto es más útil cuando se revisa con cierta regularidad, comparando los gastos previstos con los gastos reales de cada mes. Si detectas diferencias importantes en alguna categoría, puedes actualizar los datos en esta calculadora y volver a calcular el saldo y los porcentajes, para tener siempre una foto actualizada de tus ingresos y gastos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading">Preguntas frecuentes sobre la calculadora de presupuesto del hogar</h2>
+      <div class="prose">
+        <div class="faq-item">
+          <h3>¿Cómo hacer un presupuesto mensual?</h3>
+          <p>Se anotan todos los ingresos mensuales y todos los gastos habituales, agrupados por categorías como vivienda, suministros, alimentación o transporte, y se resta el total de gastos al total de ingresos para conocer el saldo mensual disponible.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué gastos debo incluir?</h3>
+          <p>Conviene incluir todos los gastos habituales del hogar: vivienda, suministros, alimentación, transporte, deudas o cuotas, ocio y suscripciones, y cualquier otro gasto recurrente que pagues cada mes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué diferencia hay entre gastos fijos y variables?</h3>
+          <p>Los gastos fijos se repiten cada mes con un importe similar, como el alquiler o una cuota de préstamo. Los gastos variables cambian de un mes a otro, como el supermercado, el ocio o el combustible, aunque también deben tenerse en cuenta en el presupuesto.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo calcular cuánto dinero me queda cada mes?</h3>
+          <p>Se resta el total de gastos mensuales al total de ingresos mensuales. Si el resultado es positivo, indica el dinero que queda disponible; si es negativo, indica el déficit mensual.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo calcular qué porcentaje de mis ingresos gasto?</h3>
+          <p>Se divide el total de gastos entre el total de ingresos y se multiplica por 100. El resultado indica qué parte de tus ingresos se destina a cubrir los gastos que has introducido.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Debo incluir gastos anuales?</h3>
+          <p>Si tienes gastos que se pagan una o pocas veces al año, como un seguro o un impuesto, puedes dividir su importe entre 12 e incluir esa parte proporcional en tu presupuesto mensual, en la categoría que corresponda.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo puedo controlar mejor los gastos del hogar?</h3>
+          <p>Revisar el presupuesto con cierta regularidad, comparar los gastos reales con los previstos, e identificar los gastos recurrentes que a veces pasan desapercibidos, como suscripciones o cuotas, ayuda a tener un mejor control del gasto del hogar.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Esta calculadora ofrece asesoramiento financiero?</h3>
+          <p>No. Esta calculadora es una herramienta informativa para organizar un presupuesto doméstico a partir de los datos que introduces, y no constituye asesoramiento financiero personalizado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OTRAS CALCULADORAS ================= -->
+  <section class="section" aria-labelledby="otras-heading">
+    <div class="container">
+      <h2 id="otras-heading">Otras calculadoras que te pueden interesar</h2>
+      <div class="card-grid">
+        <article class="calc-card">
+          <span class="calc-badge">kWh</span>
+          <h3>Consumo eléctrico</h3>
+          <p>Calcula cuánto consume un aparato y cuánto te cuesta al día, mes y año.</p>
+          <a class="btn btn-primary btn-sm" href="consumo-electrico.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">L/d</span>
+          <h3>Consumo de agua</h3>
+          <p>Estima el consumo de agua de tu hogar en litros y m³.</p>
+          <a class="btn btn-primary btn-sm" href="consumo-agua.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">€/m</span>
+          <h3>Coste de electrodomésticos</h3>
+          <p>Calcula cuánto cuesta utilizar tus electrodomésticos.</p>
+          <a class="btn btn-primary btn-sm" href="coste-electrodomesticos.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">kcal</span>
+          <h3>Calefacción</h3>
+          <p>Calcula la potencia orientativa que necesita tu estancia.</p>
+          <a class="btn btn-primary btn-sm" href="calefaccion.html">Calcular</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-band" aria-labelledby="cta-heading">
+    <div class="container cta-inner">
+      <h2 id="cta-heading">¿Quieres explorar más calculadoras del hogar?</h2>
+      <a class="btn btn-primary btn-lg" href="../index.html#calculadoras">Ver calculadoras</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Cuentas<span>Hogar</span></div>
+
+    <nav class="footer-nav" aria-label="Enlaces de pie de página">
+      <a href="../sobre-nosotros.html">Sobre nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+      <a href="../privacidad.html">Privacidad</a>
+      <a href="../cookies.html">Cookies</a>
+      <a href="../aviso-legal.html">Aviso legal</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 Cuentas Hogar</p>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+<script>
+(function () {
+  "use strict";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("calc-form");
+    if (!form) return;
+
+    var fieldDefs = [
+      { key: "sueldoPrincipal", label: "el sueldo principal", category: "ingresos" },
+      { key: "sueldoSecundario", label: "el segundo sueldo u otros ingresos", category: "ingresos" },
+      { key: "otrosIngresos", label: "otros ingresos mensuales", category: "ingresos" },
+
+      { key: "alquilerHipoteca", label: "el alquiler o hipoteca", category: "vivienda" },
+      { key: "comunidad", label: "la comunidad", category: "vivienda" },
+      { key: "segurosHogar", label: "los seguros del hogar", category: "vivienda" },
+      { key: "otrosVivienda", label: "otros gastos de vivienda", category: "vivienda" },
+
+      { key: "electricidad", label: "la electricidad", category: "suministros" },
+      { key: "agua", label: "el agua", category: "suministros" },
+      { key: "gasCalefaccion", label: "el gas o la calefacción", category: "suministros" },
+      { key: "internetTelefono", label: "internet y teléfono", category: "suministros" },
+
+      { key: "supermercado", label: "el supermercado", category: "alimentacion" },
+      { key: "comidasFuera", label: "las comidas fuera", category: "alimentacion" },
+
+      { key: "combustible", label: "el combustible", category: "transporte" },
+      { key: "transportePublico", label: "el transporte público", category: "transporte" },
+      { key: "seguroVehiculo", label: "el seguro del vehículo", category: "transporte" },
+      { key: "mantenimientoVehiculo", label: "el mantenimiento del vehículo", category: "transporte" },
+      { key: "otrosTransporte", label: "otros gastos de transporte", category: "transporte" },
+
+      { key: "prestamos", label: "los préstamos", category: "deudas" },
+      { key: "tarjetas", label: "las tarjetas de crédito", category: "deudas" },
+      { key: "otrasCuotas", label: "otras cuotas", category: "deudas" },
+
+      { key: "ocio", label: "el ocio", category: "ocio" },
+      { key: "suscripciones", label: "las plataformas y suscripciones", category: "ocio" },
+      { key: "gimnasio", label: "el gimnasio", category: "ocio" },
+      { key: "otrosOcio", label: "otros gastos de ocio", category: "ocio" },
+
+      { key: "otrosGastos", label: "otros gastos mensuales", category: "otros" }
+    ];
+
+    var fields = {};
+    fieldDefs.forEach(function (def) {
+      fields[def.key] = {
+        input: document.getElementById(def.key),
+        row: document.getElementById("row-" + def.key),
+        error: document.getElementById("error-" + def.key),
+        label: def.label,
+        category: def.category
+      };
+    });
+
+    var resultEmpty = document.getElementById("result-empty");
+    var resultContent = document.getElementById("result-content");
+    var resultSaldoBox = document.getElementById("result-saldo");
+
+    function formatEuros(value) {
+      return value.toFixed(2).replace(".", ",") + " €";
+    }
+
+    function formatPct(value) {
+      return value.toFixed(1).replace(".", ",") + " %";
+    }
+
+    function clearError(field) {
+      field.row.classList.remove("has-error");
+      field.error.textContent = "";
+      field.input.removeAttribute("aria-invalid");
+    }
+
+    function setError(field, message) {
+      field.row.classList.add("has-error");
+      field.error.textContent = message;
+      field.input.setAttribute("aria-invalid", "true");
+    }
+
+    /**
+     * Campos vacíos se tratan como 0 (todas las categorías permiten 0).
+     * Solo se marca error si el valor introducido no es un número válido
+     * o si es negativo.
+     */
+    function validateField(field) {
+      var raw = field.input.value.trim().replace(",", ".");
+
+      if (raw === "") {
+        clearError(field);
+        return 0;
+      }
+
+      var value = Number(raw);
+
+      if (Number.isNaN(value)) {
+        setError(field, "Introduce un número válido para " + field.label + ".");
+        return null;
+      }
+
+      if (value < 0) {
+        setError(field, "El valor no puede ser negativo.");
+        return null;
+      }
+
+      clearError(field);
+      return value;
+    }
+
+    function setBar(fillId, pctId, value) {
+      document.getElementById(fillId).style.width = value.toFixed(1) + "%";
+      document.getElementById(pctId).textContent = formatPct(value);
+    }
+
+    function calcular(event) {
+      event.preventDefault();
+
+      var values = {};
+      var hasError = false;
+
+      Object.keys(fields).forEach(function (key) {
+        var value = validateField(fields[key]);
+        if (value === null) {
+          hasError = true;
+        }
+        values[key] = value;
+      });
+
+      if (hasError) {
+        resultEmpty.hidden = false;
+        resultContent.hidden = true;
+
+        var firstInvalidKey = Object.keys(fields).find(function (key) {
+          return fields[key].row.classList.contains("has-error");
+        });
+        if (firstInvalidKey) {
+          fields[firstInvalidKey].input.focus();
+        }
+        return;
+      }
+
+      var ingresosTotales = values.sueldoPrincipal + values.sueldoSecundario + values.otrosIngresos;
+
+      var catVivienda = values.alquilerHipoteca + values.comunidad + values.segurosHogar + values.otrosVivienda;
+      var catSuministros = values.electricidad + values.agua + values.gasCalefaccion + values.internetTelefono;
+      var catAlimentacion = values.supermercado + values.comidasFuera;
+      var catTransporte = values.combustible + values.transportePublico + values.seguroVehiculo + values.mantenimientoVehiculo + values.otrosTransporte;
+      var catDeudas = values.prestamos + values.tarjetas + values.otrasCuotas;
+      var catOcio = values.ocio + values.suscripciones + values.gimnasio + values.otrosOcio;
+      var catOtros = values.otrosGastos;
+
+      var gastosTotales = catVivienda + catSuministros + catAlimentacion + catTransporte + catDeudas + catOcio + catOtros;
+      var saldo = ingresosTotales - gastosTotales;
+
+      document.getElementById("res-ingresos").textContent = formatEuros(ingresosTotales);
+      document.getElementById("res-gastos").textContent = formatEuros(gastosTotales);
+      document.getElementById("res-saldo").textContent = formatEuros(saldo);
+
+      var mensajeEl = document.getElementById("res-mensaje");
+      if (saldo >= 0) {
+        resultSaldoBox.classList.remove("is-negative");
+        mensajeEl.textContent = "Según los datos introducidos, tus ingresos superan tus gastos en " + formatEuros(saldo) + " al mes.";
+      } else {
+        resultSaldoBox.classList.add("is-negative");
+        mensajeEl.textContent = "Según los datos introducidos, tus gastos superan tus ingresos en " + formatEuros(Math.abs(saldo)) + " al mes.";
+      }
+
+      if (ingresosTotales > 0) {
+        var pctGastos = (gastosTotales / ingresosTotales) * 100;
+        var pctRestante = saldo > 0 ? (saldo / ingresosTotales) * 100 : 0;
+        document.getElementById("res-pct-gastos").textContent = formatPct(pctGastos);
+        document.getElementById("res-pct-restante").textContent = formatPct(pctRestante);
+      } else {
+        document.getElementById("res-pct-gastos").textContent = "—";
+        document.getElementById("res-pct-restante").textContent = "—";
+      }
+
+      document.getElementById("res-cat-vivienda").textContent = formatEuros(catVivienda);
+      document.getElementById("res-cat-suministros").textContent = formatEuros(catSuministros);
+      document.getElementById("res-cat-alimentacion").textContent = formatEuros(catAlimentacion);
+      document.getElementById("res-cat-transporte").textContent = formatEuros(catTransporte);
+      document.getElementById("res-cat-deudas").textContent = formatEuros(catDeudas);
+      document.getElementById("res-cat-ocio").textContent = formatEuros(catOcio);
+      document.getElementById("res-cat-otros").textContent = formatEuros(catOtros);
+
+      if (gastosTotales > 0) {
+        setBar("bar-vivienda", "bar-pct-vivienda", (catVivienda / gastosTotales) * 100);
+        setBar("bar-suministros", "bar-pct-suministros", (catSuministros / gastosTotales) * 100);
+        setBar("bar-alimentacion", "bar-pct-alimentacion", (catAlimentacion / gastosTotales) * 100);
+        setBar("bar-transporte", "bar-pct-transporte", (catTransporte / gastosTotales) * 100);
+        setBar("bar-deudas", "bar-pct-deudas", (catDeudas / gastosTotales) * 100);
+        setBar("bar-ocio", "bar-pct-ocio", (catOcio / gastosTotales) * 100);
+        setBar("bar-otros", "bar-pct-otros", (catOtros / gastosTotales) * 100);
+      } else {
+        ["vivienda", "suministros", "alimentacion", "transporte", "deudas", "ocio", "otros"].forEach(function (cat) {
+          setBar("bar-" + cat, "bar-pct-" + cat, 0);
+        });
+      }
+
+      resultEmpty.hidden = true;
+      resultContent.hidden = false;
+    }
+
+    function limpiar() {
+      form.reset();
+      Object.keys(fields).forEach(function (key) {
+        clearError(fields[key]);
+      });
+      resultSaldoBox.classList.remove("is-negative");
+      resultEmpty.hidden = false;
+      resultContent.hidden = true;
+      fields.sueldoPrincipal.input.focus();
+    }
+
+    form.addEventListener("submit", calcular);
+
+    var btnLimpiar = document.getElementById("btn-limpiar");
+    if (btnLimpiar) {
+      btnLimpiar.addEventListener("click", limpiar);
+    }
+
+    Object.keys(fields).forEach(function (key) {
+      fields[key].input.addEventListener("input", function () {
+        if (fields[key].row.classList.contains("has-error")) {
+          clearError(fields[key]);
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
