@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Aire Acondicionado y Potencia | Cuentas Hogar</title>
+<meta name="description" content="Calculadora orientativa de aire acondicionado: estima la potencia frigorífica en W, kW y BTU/h que puede necesitar una habitación según su superficie, altura, aislamiento y más.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cuentashogar.com/calculadoras/aire-acondicionado.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuentas Hogar">
+<meta property="og:title" content="Calculadora de Aire Acondicionado y Potencia | Cuentas Hogar">
+<meta property="og:description" content="Estima de forma orientativa la potencia de aire acondicionado (W, kW y BTU/h) que puede necesitar una habitación.">
+<meta property="og:url" content="https://cuentashogar.com/calculadoras/aire-acondicionado.html">
+<meta name="theme-color" content="#f5f8f6">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cuentashogar.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://cuentashogar.com/#calculadoras" },
+    { "@type": "ListItem", "position": 3, "name": "Aire acondicionado", "item": "https://cuentashogar.com/calculadoras/aire-acondicionado.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Qué potencia de aire acondicionado necesito?", "acceptedAnswer": { "@type": "Answer", "text": "Depende de la superficie y el volumen de la estancia, el aislamiento, la exposición solar, el número de personas y ventanas, entre otros factores. Esta calculadora ofrece una estimación orientativa combinando esos datos, pero el dimensionamiento exacto lo determina un profesional." } },
+    { "@type": "Question", "name": "¿Cuántos kW necesito para una habitación?", "acceptedAnswer": { "@type": "Answer", "text": "No existe una cifra fija válida para todas las habitaciones: una estancia pequeña y bien aislada puede necesitar bastante menos de 1 kW, mientras que una más grande, con mucho sol o mal aislamiento, puede requerir 2 kW o más. El resultado depende de las características concretas de cada espacio." } },
+    { "@type": "Question", "name": "¿Qué significa BTU/h?", "acceptedAnswer": { "@type": "Answer", "text": "BTU/h son las siglas de British Thermal Units por hora, una unidad de potencia térmica muy usada en climatización, especialmente en la documentación de equipos de aire acondicionado." } },
+    { "@type": "Question", "name": "¿Cómo pasar de W a BTU/h?", "acceptedAnswer": { "@type": "Answer", "text": "Se multiplica la potencia en vatios por 3,412. Por ejemplo, 2000 W equivalen aproximadamente a 2000 × 3,412 ≈ 6824 BTU/h." } },
+    { "@type": "Question", "name": "¿Influye la altura del techo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. A mayor altura de techo, mayor es el volumen de aire que hay que enfriar en la misma superficie, por lo que la potencia orientativa necesaria tiende a aumentar respecto a un techo estándar." } },
+    { "@type": "Question", "name": "¿Influye el aislamiento?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Un aislamiento bueno reduce las pérdidas o ganancias de calor a través de paredes, techo y ventanas, por lo que suele necesitarse menos potencia. Un aislamiento bajo tiende a aumentar la necesidad orientativa." } },
+    { "@type": "Question", "name": "¿Qué ocurre si el aire acondicionado tiene poca potencia?", "acceptedAnswer": { "@type": "Answer", "text": "Un equipo con potencia insuficiente puede tener dificultades para alcanzar o mantener la temperatura deseada, especialmente en los momentos de mayor calor, y tiende a funcionar de forma más continua, lo que puede aumentar su desgaste y su consumo." } },
+    { "@type": "Question", "name": "¿Es mejor comprar un equipo con mucha más potencia?", "acceptedAnswer": { "@type": "Answer", "text": "No necesariamente. Un equipo sobredimensionado puede enfriar muy rápido y apagarse y encenderse con frecuencia, lo que dificulta un control estable de la temperatura y la humedad, además de no ser la opción más eficiente." } },
+    { "@type": "Question", "name": "¿Esta calculadora sustituye a un instalador?", "acceptedAnswer": { "@type": "Answer", "text": "No. Esta calculadora ofrece una estimación orientativa para hacerte una idea general. El cálculo de carga térmica exacto, adaptado a tu vivienda, debe realizarlo un instalador o profesional cualificado." } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">Cuentas<span>Hogar</span></a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#calculadoras" aria-current="page">Calculadoras</a></li>
+        <li><a href="../index.html#guias">Guías</a></li>
+        <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="../index.html#calculadoras">Ver calculadoras</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ================= INTRO / BREADCRUMB ================= -->
+  <section class="page-intro">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Miga de pan">
+        <a href="../index.html">Inicio</a> &gt;
+        <a href="../index.html#calculadoras">Calculadoras</a> &gt;
+        <span class="current" aria-current="page">Aire acondicionado</span>
+      </nav>
+      <h1>Calculadora de aire acondicionado: ¿qué potencia necesito?</h1>
+      <p>Obtén una estimación orientativa de la potencia frigorífica que puede necesitar una habitación, a partir de su superficie, altura, aislamiento, exposición solar, personas y ventanas. También puedes ver nuestras calculadoras de <a href="consumo-electrico.html">consumo eléctrico</a>, <a href="pintura.html">pintura necesaria</a> y <a href="metros-cuadrados.html">metros cuadrados</a>.</p>
+    </div>
+  </section>
+
+  <!-- ================= CALCULADORA ================= -->
+  <section class="section" id="calculadora" aria-labelledby="calc-heading">
+    <div class="container">
+      <h2 id="calc-heading">Calcula tu potencia orientativa</h2>
+
+      <div class="calc-tool-grid">
+        <div class="calc-panel">
+          <h3>Datos de la estancia</h3>
+          <form id="calc-form" novalidate>
+            <div class="form-group" id="row-superficie">
+              <label for="superficie">Superficie de la habitación (m²)</label>
+              <input type="number" id="superficie" name="superficie" inputmode="decimal" min="0" step="any" placeholder="20">
+              <span class="field-error" id="error-superficie" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-altura">
+              <label for="altura">Altura del techo (m)</label>
+              <input type="number" id="altura" name="altura" inputmode="decimal" min="0" step="any" placeholder="2.5">
+              <span class="form-hint">Valor habitual orientativo: 2,5 m. Edítalo si tu techo es más alto o más bajo.</span>
+              <span class="field-error" id="error-altura" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-aislamiento">
+              <label for="aislamiento">Nivel de aislamiento</label>
+              <select id="aislamiento" name="aislamiento">
+                <option value="bueno">Bueno</option>
+                <option value="medio" selected>Medio</option>
+                <option value="bajo">Bajo</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="row-exposicion">
+              <label for="exposicion">Exposición solar</label>
+              <select id="exposicion" name="exposicion">
+                <option value="baja">Baja</option>
+                <option value="media" selected>Media</option>
+                <option value="alta">Alta</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="row-personas">
+              <label for="personas">Número habitual de personas</label>
+              <input type="number" id="personas" name="personas" inputmode="numeric" min="0" step="1" placeholder="2">
+              <span class="field-error" id="error-personas" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="row-ventanas">
+              <label for="ventanas">Número de ventanas</label>
+              <input type="number" id="ventanas" name="ventanas" inputmode="numeric" min="0" step="1" placeholder="2">
+              <span class="field-error" id="error-ventanas" role="alert"></span>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Calcular potencia</button>
+              <button class="btn btn-outline" type="button" id="btn-limpiar">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="calc-panel" id="resultados" aria-live="polite">
+          <h3>Resultado</h3>
+
+          <div id="result-empty" class="result-placeholder">
+            Completa los datos de la habitación y pulsa «Calcular potencia» para ver la estimación orientativa.
+          </div>
+
+          <div id="result-content" hidden>
+            <div class="result-group">
+              <h4>Estancia</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">Superficie</span>
+                  <span class="result-value" id="res-superficie">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Volumen aproximado</span>
+                  <span class="result-value" id="res-volumen">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Nivel orientativo</span>
+                  <span class="result-value" id="res-nivel">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-group">
+              <h4>Potencia estimada</h4>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">En vatios (W)</span>
+                  <span class="result-value" id="res-watts">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">En kilovatios (kW)</span>
+                  <span class="result-value" id="res-kw">—</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">En BTU/h</span>
+                  <span class="result-value" id="res-btu">—</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-total">
+              <span class="result-total-label">Potencia orientativa recomendada</span>
+              <span class="result-total-value" id="res-total">—</span>
+            </div>
+
+            <p class="purchase-tip">
+              Este resultado es una estimación orientativa y no sustituye el cálculo de carga térmica realizado por un profesional. Factores como el aislamiento real, la orientación, la exposición solar, la altura del techo, el número de ventanas y personas, los equipos eléctricos de la sala o el clima de tu zona pueden modificar la necesidad real de potencia. Ante dudas, consulta con un instalador.
+            </p>
+
+            <p class="formula-note">
+              Estimación calculada como: <code>volumen = superficie × altura</code>, <code>potencia base = volumen × 40 W/m³</code>, ajustada después por el aislamiento y la exposición solar elegidos, y sumando un margen orientativo por persona y por ventana adicional a partir de la segunda. Es una simplificación pensada para orientar, no una norma oficial ni un cálculo de carga térmica profesional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO EDUCATIVO ================= -->
+  <section class="section section-alt" aria-labelledby="guia-heading">
+    <div class="container">
+      <h2 id="guia-heading">Guía completa: cómo estimar la potencia de un aire acondicionado</h2>
+      <div class="prose">
+
+        <h3>Cómo calcular la potencia de un aire acondicionado</h3>
+        <p>
+          Estimar la potencia frigorífica que puede necesitar una habitación consiste en combinar varios factores: el volumen de aire a enfriar, las características de aislamiento y exposición solar del espacio, y las fuentes de calor adicionales que hay dentro de la sala, como las personas o los equipos eléctricos. No existe una única cifra válida para todas las habitaciones del mismo tamaño, porque dos estancias con la misma superficie pueden tener necesidades muy distintas según cómo estén construidas y orientadas. Esta calculadora combina esos factores de forma simplificada para ofrecerte una primera referencia orientativa.
+        </p>
+
+        <h3>Por qué los metros cuadrados no son el único factor</h3>
+        <p>
+          Es habitual pensar únicamente en los metros cuadrados de una habitación a la hora de elegir la potencia de un aire acondicionado, pero la superficie por sí sola no cuenta toda la historia. Una habitación con techos altos tiene más volumen de aire que enfriar que otra de la misma superficie con techos bajos. Del mismo modo, dos habitaciones de igual tamaño pueden recibir cantidades de sol muy distintas, o tener un aislamiento muy diferente, lo que cambia notablemente la potencia orientativa recomendable en cada caso.
+        </p>
+
+        <h3>Influencia de la altura del techo</h3>
+        <p>
+          El volumen de aire que hay que climatizar depende tanto de la superficie como de la altura del techo: <code>volumen = superficie × altura</code>. Un techo más alto de lo habitual implica más metros cúbicos de aire para la misma superficie en planta, por lo que, en igualdad de condiciones, tiende a requerir algo más de potencia que un techo estándar de alrededor de 2,5 metros.
+        </p>
+
+        <h3>Influencia del aislamiento</h3>
+        <p>
+          El aislamiento de paredes, techo, suelo y cerramientos determina cuánto calor entra o sale de la habitación desde el exterior. Un aislamiento bueno reduce esas pérdidas y ganancias de calor, por lo que suele permitir trabajar con una potencia algo menor. Un aislamiento bajo, en cambio, facilita que el calor exterior penetre con más facilidad, lo que tiende a aumentar la potencia orientativa necesaria para mantener una temperatura estable.
+        </p>
+
+        <h3>Influencia de la orientación y el sol</h3>
+        <p>
+          Una habitación con ventanas orientadas al sol durante buena parte del día recibe una carga de calor adicional por radiación solar, especialmente en las horas centrales. Cuanta mayor sea esa exposición solar, mayor suele ser también la necesidad orientativa de potencia para compensar ese aporte extra de calor, en comparación con una estancia con poca incidencia solar directa.
+        </p>
+
+        <h3>Cómo afectan ventanas y personas</h3>
+        <p>
+          Cada persona presente en una habitación genera calor de forma constante, y ese calor se suma a la carga que debe gestionar el equipo de climatización. Del mismo modo, las ventanas son puntos por los que suele entrar más calor que a través de un muro macizo, por lo que un número elevado de ventanas puede aumentar ligeramente la necesidad orientativa de potencia. Esta calculadora añade un pequeño margen adicional a partir de la segunda persona y de la segunda ventana, precisamente para reflejar este efecto de forma orientativa.
+        </p>
+
+        <h3>Diferencia entre W, kW y BTU/h</h3>
+        <p>
+          El vatio (W) es la unidad básica de potencia en el Sistema Internacional. El kilovatio (kW) equivale a 1000 W y se usa para expresar potencias más grandes de forma cómoda. El BTU/h (British Thermal Units por hora) es una unidad de potencia térmica muy utilizada históricamente en climatización, sobre todo en las fichas técnicas de muchos equipos de aire acondicionado, aunque haga referencia al mismo tipo de magnitud física que el vatio.
+        </p>
+
+        <h3>Cómo convertir W a BTU/h</h3>
+        <p>
+          La conversión aproximada entre ambas unidades es la siguiente:
+        </p>
+        <p><code>1 W ≈ 3,412 BTU/h</code></p>
+        <p>
+          Por ejemplo, un equipo de 2000 W equivale aproximadamente a 2000 × 3,412 ≈ 6824 BTU/h. Esta calculadora aplica esta misma conversión sobre el resultado en vatios para mostrarte también la equivalencia en BTU/h.
+        </p>
+
+        <h3>Ejemplo práctico</h3>
+        <p>
+          Tomemos una habitación de 20 m², con una altura de techo de 2,5 m, aislamiento medio, exposición solar media, 2 personas habituales y 2 ventanas:
+        </p>
+        <ul>
+          <li><strong>Volumen:</strong> 20 × 2,5 = 50 m³</li>
+          <li><strong>Potencia base:</strong> 50 × 40 W/m³ = 2000 W</li>
+          <li><strong>Ajuste por aislamiento medio:</strong> sin cambios (factor neutro)</li>
+          <li><strong>Ajuste por exposición media:</strong> sin cambios (factor neutro)</li>
+          <li><strong>Personas y ventanas:</strong> al ser 2 y 2, no se añade margen adicional en este ejemplo</li>
+          <li><strong>Resultado orientativo:</strong> 2000 W ≈ 2 kW ≈ 6824 BTU/h</li>
+        </ul>
+        <p>
+          Si esa misma habitación tuviera un aislamiento bajo y mucha exposición solar, o más personas y ventanas de lo habitual, el resultado orientativo aumentaría respecto a este ejemplo, reflejando esa mayor carga de calor.
+        </p>
+
+        <h3>Por qué una máquina demasiado pequeña puede ser insuficiente</h3>
+        <p>
+          Un equipo con menos potencia de la que realmente necesita la habitación puede tener dificultades para alcanzar la temperatura deseada, especialmente en los momentos de más calor o con más personas en la sala. Además, suele tener que funcionar de manera casi continua para intentar compensar esa diferencia, lo que puede traducirse en un mayor desgaste del equipo y en un consumo eléctrico menos eficiente a largo plazo.
+        </p>
+
+        <h3>Por qué sobredimensionar tampoco siempre es conveniente</h3>
+        <p>
+          Elegir un equipo con mucha más potencia de la necesaria no siempre es la mejor opción. Un aire acondicionado sobredimensionado puede enfriar la habitación muy rápido y apagarse enseguida, para volver a encenderse poco después, en ciclos cortos y frecuentes. Este funcionamiento intermitente puede dificultar un control estable de la temperatura y de la humedad, y no necesariamente se traduce en un mejor confort ni en un uso más eficiente de la energía.
+        </p>
+
+        <h3>Qué es una carga térmica</h3>
+        <p>
+          La carga térmica de un espacio es la cantidad de calor que hay que retirar (o aportar) para mantenerlo a una temperatura determinada, teniendo en cuenta todos los factores que intervienen: la construcción del edificio, el clima de la zona, la orientación, las personas, los equipos eléctricos, la iluminación y muchos otros elementos. El cálculo de carga térmica es un proceso técnico detallado que realizan los profesionales de climatización, y va más allá de la estimación simplificada que ofrece esta calculadora.
+        </p>
+
+        <h3>Cuándo conviene consultar a un profesional</h3>
+        <p>
+          Esta calculadora puede servirte como primera referencia antes de comprar o presupuestar un equipo, pero conviene consultar a un instalador o profesional cualificado especialmente en viviendas con características particulares: techos muy altos o irregulares, grandes superficies acristaladas, climas muy extremos, espacios abiertos conectados entre sí, o instalaciones que deban cumplir una normativa específica. Un profesional podrá realizar un cálculo de carga térmica ajustado a tu vivienda concreta y recomendarte el equipo más adecuado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading">Preguntas frecuentes sobre la calculadora de aire acondicionado</h2>
+      <div class="prose">
+        <div class="faq-item">
+          <h3>¿Qué potencia de aire acondicionado necesito?</h3>
+          <p>Depende de la superficie y el volumen de la estancia, el aislamiento, la exposición solar, el número de personas y ventanas, entre otros factores. Esta calculadora ofrece una estimación orientativa combinando esos datos, pero el dimensionamiento exacto lo determina un profesional.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuántos kW necesito para una habitación?</h3>
+          <p>No existe una cifra fija válida para todas las habitaciones: una estancia pequeña y bien aislada puede necesitar bastante menos de 1 kW, mientras que una más grande, con mucho sol o mal aislamiento, puede requerir 2 kW o más. El resultado depende de las características concretas de cada espacio.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué significa BTU/h?</h3>
+          <p>BTU/h son las siglas de British Thermal Units por hora, una unidad de potencia térmica muy usada en climatización, especialmente en la documentación de equipos de aire acondicionado.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo pasar de W a BTU/h?</h3>
+          <p>Se multiplica la potencia en vatios por 3,412. Por ejemplo, 2000 W equivalen aproximadamente a 2000 × 3,412 ≈ 6824 BTU/h.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Influye la altura del techo?</h3>
+          <p>Sí. A mayor altura de techo, mayor es el volumen de aire que hay que enfriar en la misma superficie, por lo que la potencia orientativa necesaria tiende a aumentar respecto a un techo estándar.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Influye el aislamiento?</h3>
+          <p>Sí. Un aislamiento bueno reduce las pérdidas o ganancias de calor a través de paredes, techo y ventanas, por lo que suele necesitarse menos potencia. Un aislamiento bajo tiende a aumentar la necesidad orientativa.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué ocurre si el aire acondicionado tiene poca potencia?</h3>
+          <p>Un equipo con potencia insuficiente puede tener dificultades para alcanzar o mantener la temperatura deseada, especialmente en los momentos de mayor calor, y tiende a funcionar de forma más continua, lo que puede aumentar su desgaste y su consumo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Es mejor comprar un equipo con mucha más potencia?</h3>
+          <p>No necesariamente. Un equipo sobredimensionado puede enfriar muy rápido y apagarse y encenderse con frecuencia, lo que dificulta un control estable de la temperatura y la humedad, además de no ser la opción más eficiente.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Esta calculadora sustituye a un instalador?</h3>
+          <p>No. Esta calculadora ofrece una estimación orientativa para hacerte una idea general. El cálculo de carga térmica exacto, adaptado a tu vivienda, debe realizarlo un instalador o profesional cualificado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OTRAS CALCULADORAS ================= -->
+  <section class="section" aria-labelledby="otras-heading">
+    <div class="container">
+      <h2 id="otras-heading">Otras calculadoras que te pueden interesar</h2>
+      <div class="card-grid">
+        <article class="calc-card">
+          <span class="calc-badge">kWh</span>
+          <h3>Consumo eléctrico</h3>
+          <p>Calcula cuánto consume un aparato y cuánto te cuesta al día, mes y año.</p>
+          <a class="btn btn-primary btn-sm" href="consumo-electrico.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">L</span>
+          <h3>Pintura necesaria</h3>
+          <p>Calcula cuántos litros de pintura necesitas para una habitación.</p>
+          <a class="btn btn-primary btn-sm" href="pintura.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">m²</span>
+          <h3>Metros cuadrados</h3>
+          <p>Calcula superficies fácilmente.</p>
+          <a class="btn btn-primary btn-sm" href="metros-cuadrados.html">Calcular</a>
+        </article>
+
+        <article class="calc-card">
+          <span class="calc-badge">+</span>
+          <h3>Todas las calculadoras</h3>
+          <p>Consulta el listado completo de herramientas disponibles y próximas.</p>
+          <a class="btn btn-primary btn-sm" href="../index.html#calculadoras">Ver todas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-band" aria-labelledby="cta-heading">
+    <div class="container cta-inner">
+      <h2 id="cta-heading">¿Quieres explorar más calculadoras del hogar?</h2>
+      <a class="btn btn-primary btn-lg" href="../index.html#calculadoras">Ver calculadoras</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Cuentas<span>Hogar</span></div>
+
+    <nav class="footer-nav" aria-label="Enlaces de pie de página">
+      <a href="../sobre-nosotros.html">Sobre nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+      <a href="../privacidad.html">Privacidad</a>
+      <a href="../cookies.html">Cookies</a>
+      <a href="../aviso-legal.html">Aviso legal</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 Cuentas Hogar</p>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+<script>
+(function () {
+  "use strict";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("calc-form");
+    if (!form) return;
+
+    var WATTS_POR_M3 = 40;
+    var W_A_BTU = 3.412;
+
+    var factoresAislamiento = { bueno: 0.9, medio: 1.0, bajo: 1.15 };
+    var factoresExposicion = { baja: 0.95, media: 1.0, alta: 1.15 };
+
+    var fields = {
+      superficie: {
+        input: document.getElementById("superficie"),
+        row: document.getElementById("row-superficie"),
+        error: document.getElementById("error-superficie"),
+        label: "la superficie de la habitación",
+        positive: true
+      },
+      altura: {
+        input: document.getElementById("altura"),
+        row: document.getElementById("row-altura"),
+        error: document.getElementById("error-altura"),
+        label: "la altura del techo",
+        positive: true
+      },
+      personas: {
+        input: document.getElementById("personas"),
+        row: document.getElementById("row-personas"),
+        error: document.getElementById("error-personas"),
+        label: "el número de personas",
+        integer: true
+      },
+      ventanas: {
+        input: document.getElementById("ventanas"),
+        row: document.getElementById("row-ventanas"),
+        error: document.getElementById("error-ventanas"),
+        label: "el número de ventanas",
+        integer: true
+      }
+    };
+
+    var aislamientoSelect = document.getElementById("aislamiento");
+    var exposicionSelect = document.getElementById("exposicion");
+
+    var resultEmpty = document.getElementById("result-empty");
+    var resultContent = document.getElementById("result-content");
+
+    function formatM2(value) {
+      return value.toFixed(2).replace(".", ",") + " m²";
+    }
+
+    function formatM3(value) {
+      return value.toFixed(2).replace(".", ",") + " m³";
+    }
+
+    function formatWatts(value) {
+      return Math.round(value).toLocaleString("es-ES") + " W";
+    }
+
+    function formatKw(value) {
+      return (value / 1000).toFixed(2).replace(".", ",") + " kW";
+    }
+
+    function formatBtu(value) {
+      return Math.round(value * W_A_BTU).toLocaleString("es-ES") + " BTU/h";
+    }
+
+    function clearError(field) {
+      field.row.classList.remove("has-error");
+      field.error.textContent = "";
+      field.input.removeAttribute("aria-invalid");
+    }
+
+    function setError(field, message) {
+      field.row.classList.add("has-error");
+      field.error.textContent = message;
+      field.input.setAttribute("aria-invalid", "true");
+    }
+
+    function validateField(field) {
+      var raw = field.input.value.trim().replace(",", ".");
+
+      if (raw === "") {
+        setError(field, "Introduce " + field.label + ".");
+        return null;
+      }
+
+      var value = Number(raw);
+
+      if (Number.isNaN(value)) {
+        setError(field, "Introduce un número válido para " + field.label + ".");
+        return null;
+      }
+
+      if (value < 0) {
+        setError(field, "El valor no puede ser negativo.");
+        return null;
+      }
+
+      if (field.positive && value === 0) {
+        setError(field, "El valor debe ser mayor que 0.");
+        return null;
+      }
+
+      if (field.integer && !Number.isInteger(value)) {
+        setError(field, "Introduce un número entero para " + field.label + ".");
+        return null;
+      }
+
+      clearError(field);
+      return value;
+    }
+
+    function calcular(event) {
+      event.preventDefault();
+
+      var values = {};
+      var hasError = false;
+
+      Object.keys(fields).forEach(function (key) {
+        var value = validateField(fields[key]);
+        if (value === null) {
+          hasError = true;
+        }
+        values[key] = value;
+      });
+
+      if (hasError) {
+        resultEmpty.hidden = false;
+        resultContent.hidden = true;
+
+        var firstInvalidKey = Object.keys(fields).find(function (key) {
+          return fields[key].row.classList.contains("has-error");
+        });
+        if (firstInvalidKey) {
+          fields[firstInvalidKey].input.focus();
+        }
+        return;
+      }
+
+      var aislamiento = aislamientoSelect.value;
+      var exposicion = exposicionSelect.value;
+      var factorAislamiento = factoresAislamiento[aislamiento] || 1;
+      var factorExposicion = factoresExposicion[exposicion] || 1;
+
+      var volumen = values.superficie * values.altura;
+      var potenciaBase = volumen * WATTS_POR_M3 * factorAislamiento * factorExposicion;
+
+      var extraPersonas = Math.max(0, values.personas - 2) * 100;
+      var extraVentanas = Math.max(0, values.ventanas - 2) * 50;
+
+      var potenciaTotal = potenciaBase + extraPersonas + extraVentanas;
+
+      var wPorM2 = potenciaTotal / values.superficie;
+      var nivel = "Media";
+      if (wPorM2 < 80) {
+        nivel = "Baja";
+      } else if (wPorM2 > 120) {
+        nivel = "Alta";
+      }
+
+      document.getElementById("res-superficie").textContent = formatM2(values.superficie);
+      document.getElementById("res-volumen").textContent = formatM3(volumen);
+      document.getElementById("res-nivel").textContent = nivel;
+      document.getElementById("res-watts").textContent = formatWatts(potenciaTotal);
+      document.getElementById("res-kw").textContent = formatKw(potenciaTotal);
+      document.getElementById("res-btu").textContent = formatBtu(potenciaTotal);
+      document.getElementById("res-total").textContent = formatWatts(potenciaTotal) + " (" + formatKw(potenciaTotal) + " · " + formatBtu(potenciaTotal) + ")";
+
+      resultEmpty.hidden = true;
+      resultContent.hidden = false;
+    }
+
+    function limpiar() {
+      form.reset();
+      Object.keys(fields).forEach(function (key) {
+        clearError(fields[key]);
+      });
+      resultEmpty.hidden = false;
+      resultContent.hidden = true;
+      fields.superficie.input.focus();
+    }
+
+    form.addEventListener("submit", calcular);
+
+    var btnLimpiar = document.getElementById("btn-limpiar");
+    if (btnLimpiar) {
+      btnLimpiar.addEventListener("click", limpiar);
+    }
+
+    Object.keys(fields).forEach(function (key) {
+      fields[key].input.addEventListener("input", function () {
+        if (fields[key].row.classList.contains("has-error")) {
+          clearError(fields[key]);
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
