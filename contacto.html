@@ -1,185 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto — Calculadora Hogar</title>
-  <meta name="description" content="Escríbenos si tienes dudas, sugerencias o has encontrado un error en alguna calculadora de Calculadora Hogar." />
-  <link rel="canonical" href="https://www.calculadorahogar.es/contacto.html" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contacto — Calculadora Hogar" />
-  <meta property="og:description" content="Escríbenos si tienes dudas, sugerencias o has encontrado un error en alguna calculadora." />
-  <meta property="og:url" content="https://www.calculadorahogar.es/contacto.html" />
-  <meta name="theme-color" content="#f5f6f2" />
-  <link rel="icon" href="data:," />
-  <link rel="stylesheet" href="css/styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Cuentas Hogar</title>
+<meta name="description" content="Contacta con Cuentas Hogar por correo electrónico para comunicar un error en una calculadora, hacer una sugerencia o resolver una consulta sobre la web.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cuentashogar.com/contacto.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cuentas Hogar">
+<meta property="og:title" content="Contacto | Cuentas Hogar">
+<meta property="og:description" content="Contacta con Cuentas Hogar por correo electrónico para comunicar un error, hacer una sugerencia o resolver una consulta sobre la web.">
+<meta property="og:url" content="https://cuentashogar.com/contacto.html">
+<meta name="theme-color" content="#f5f8f6">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">
-        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <path d="M4 17 16 6l12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M7 14v12h18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M13 26v-7h6v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span>Calculadora<span class="brand-name-alt">Hogar</span></span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html#calculadoras">Calculadoras</a></li>
-          <li><a href="index.html#articulos">Artículos</a></li>
-          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a class="nav-cta" href="contacto.html" aria-current="page">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Cuentas<span>Hogar</span></a>
 
-  <main id="contenido">
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Miga de pan">
-          <a href="index.html">Inicio</a> / <span aria-current="page">Contacto</span>
-        </nav>
-        <span class="eyebrow">Hablemos</span>
-        <h1>¿Dudas, sugerencias o un error que corregir?</h1>
-      </div>
-    </section>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
 
-    <section class="section">
-      <div class="container contact-grid">
-        <div class="form-card">
-          <form id="contact-form" novalidate>
-            <div class="form-row">
-              <label for="name">Nombre <span aria-hidden="true">*</span></label>
-              <input type="text" id="name" name="name" autocomplete="name" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
-              <input type="email" id="email" name="email" autocomplete="email" required />
-            </div>
-            <div class="form-row">
-              <label for="subject">Asunto <span class="hint">(opcional)</span></label>
-              <select id="subject" name="subject">
-                <option value="duda">Duda sobre una calculadora</option>
-                <option value="error">Reportar un error</option>
-                <option value="sugerencia">Sugerencia de nueva calculadora</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="message">Mensaje <span aria-hidden="true">*</span></label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="form-row">
-              <label class="form-check">
-                <input type="checkbox" id="consent" name="consent" required />
-                <span>He leído y acepto la <a href="privacidad.html">política de privacidad</a>.</span>
-              </label>
-            </div>
-            <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
-            <p class="form-msg" id="form-message" role="status"></p>
-          </form>
-        </div>
-
-        <aside>
-          <div class="contact-info-list">
-            <div class="contact-info-item">
-              <span class="calc-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg>
-              </span>
-              <div>
-                <h3>Correo electrónico</h3>
-                <p><a href="mailto:hola@calculadorahogar.es">hola@calculadorahogar.es</a></p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <span class="calc-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
-              </span>
-              <div>
-                <h3>Ubicación</h3>
-                <p>Pamplona, Navarra, España</p>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <span class="calc-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-              </span>
-              <div>
-                <h3>Tiempo de respuesta</h3>
-                <p>Solemos responder en menos de 48 horas laborables.</p>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="index.html">
-            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <path d="M4 17 16 6l12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 14v12h18V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M13 26v-7h6v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Calculadora<span class="brand-name-alt">Hogar</span></span>
-          </a>
-          <p>Calculadoras gratuitas y artículos claros para entender los gastos y necesidades de tu hogar.</p>
-        </div>
-        <nav class="footer-col" aria-label="Calculadoras">
-          <h2>Calculadoras</h2>
-          <ul>
-            <li><a href="calculadoras/consumo-electrico.html">Consumo eléctrico</a></li>
-            <li><a href="calculadoras/pintura-necesaria.html">Pintura necesaria</a></li>
-            <li><a href="calculadoras/metros-cuadrados.html">Metros cuadrados</a></li>
-            <li><a href="calculadoras/ahorro-energetico.html">Ahorro energético</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-col" aria-label="Empresa">
-          <h2>Empresa</h2>
-          <ul>
-            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="index.html#articulos">Artículos</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-col" aria-label="Legal">
-          <h2>Legal</h2>
-          <ul>
-            <li><a href="privacidad.html">Política de privacidad</a></li>
-            <li><a href="cookies.html">Política de cookies</a></li>
-            <li><a href="aviso-legal.html">Aviso legal</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>© <span id="current-year">2026</span> Calculadora Hogar. Todos los derechos reservados.</p>
-        <p><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
-    <p>Usamos cookies técnicas necesarias para el funcionamiento del sitio. Puedes leer más en nuestra <a href="cookies.html">política de cookies</a>.</p>
-    <div class="cookie-actions">
-      <button class="btn btn-ghost btn-sm" type="button" id="cookie-reject">Rechazar</button>
-      <button class="btn btn-primary btn-sm" type="button" id="cookie-accept">Aceptar</button>
-    </div>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#calculadoras">Calculadoras</a></li>
+        <li><a href="index.html#guias">Guías</a></li>
+        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="index.html#calculadoras">Ver calculadoras</a>
+    </nav>
   </div>
+</header>
 
-  <script src="js/main.js" defer></script>
+<main id="contenido">
+
+  <!-- ================= INTRO ================= -->
+  <section class="page-intro">
+    <div class="container">
+      <h1>Contacto</h1>
+      <p>Si quieres comunicar un error en una calculadora, hacer una sugerencia o contactar con Cuentas Hogar, puedes escribirnos por correo electrónico.</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+
+        <h2>Cómo contactar con Cuentas Hogar</h2>
+        <p>
+          Puedes escribirnos en cualquier momento a la siguiente dirección de correo electrónico:
+        </p>
+
+        <div class="example-box">
+          <h3>myadsamazon@gmail.com</h3>
+          <p>Puedes escribirnos directamente a <a href="mailto:myadsamazon@gmail.com">myadsamazon@gmail.com</a> o usar el botón de abajo para abrir tu programa de correo.</p>
+          <div class="example-result">
+            <a class="btn btn-primary" href="mailto:myadsamazon@gmail.com">Enviar un correo</a>
+          </div>
+        </div>
+
+        <h2>Errores en las calculadoras</h2>
+        <p>
+          Si detectas un cálculo que parece incorrecto, un problema de funcionamiento, un enlace que no funciona, información que no se muestra correctamente o cualquier problema de visualización en alguna de nuestras calculadoras, puedes escribirnos para comunicarlo. Si es posible, indícanos qué calculadora estabas utilizando y qué problema encontraste; esto nos ayuda a revisarlo con más facilidad.
+        </p>
+
+        <h2>Sugerencias</h2>
+        <p>
+          También puedes escribirnos con propuestas para mejorar las calculadoras, las explicaciones que las acompañan, la navegación, el contenido o la experiencia de uso general de la web. Leemos todas las sugerencias que recibimos, aunque no podemos garantizar que todas lleguen a implementarse.
+        </p>
+
+        <h2>Consultas sobre Cuentas Hogar</h2>
+        <p>
+          Si tienes cualquier otra cuestión relacionada con el funcionamiento o el contenido de la web, puedes utilizar el mismo correo. Si quieres saber más sobre qué es Cuentas Hogar y cómo funcionan nuestras herramientas, puedes <a href="sobre-nosotros.html">conocer más sobre Cuentas Hogar</a>.
+        </p>
+
+        <h2>Qué tipo de asesoramiento no ofrecemos</h2>
+        <p>
+          Cuentas Hogar ofrece herramientas y contenidos informativos para ayudarte a hacer cálculos orientativos relacionados con tu hogar. A través de este correo no ofrecemos asesoramiento financiero personalizado, diagnósticos profesionales de instalaciones, proyectos técnicos, presupuestos de obras, servicios de emergencia ni asesoramiento profesional individualizado. Cuando una situación requiera una evaluación profesional, lo adecuado es acudir al profesional correspondiente para tu caso concreto.
+        </p>
+
+        <h2>Respuesta a los mensajes</h2>
+        <p>
+          Intentaremos revisar los mensajes recibidos tan pronto como sea posible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Cuentas<span>Hogar</span></div>
+
+    <nav class="footer-nav" aria-label="Enlaces de pie de página">
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 Cuentas Hogar</p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
 </body>
 </html>
