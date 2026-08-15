@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo Calcular el Coste de un Electrodoméstico | Cuentas Hogar</title>
+<meta name="description" content="Aprende paso a paso a calcular cuánto cuesta usar un electrodoméstico: encuentra su potencia, calcula el consumo en kWh y estima el coste diario, mensual y anual.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cuentashogar.com/guias/calcular-coste-electrodomestico.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cuentas Hogar">
+<meta property="og:title" content="Cómo Calcular el Coste de un Electrodoméstico | Cuentas Hogar">
+<meta property="og:description" content="Aprende paso a paso a calcular cuánto cuesta usar un electrodoméstico, desde la potencia hasta el coste diario, mensual y anual.">
+<meta property="og:url" content="https://cuentashogar.com/guias/calcular-coste-electrodomestico.html">
+<meta name="theme-color" content="#f5f8f6">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cómo saber cuánto cuesta usar un electrodoméstico?", "acceptedAnswer": { "@type": "Answer", "text": "Se calcula el consumo en kWh (potencia en kW multiplicada por las horas de uso) y se multiplica por el precio del kWh de tu tarifa. El resultado es el coste aproximado de ese uso." } },
+    { "@type": "Question", "name": "¿Cómo pasar de W a kW?", "acceptedAnswer": { "@type": "Answer", "text": "Se divide la potencia en vatios entre 1000, ya que 1000 W equivalen a 1 kW." } },
+    { "@type": "Question", "name": "¿Qué significa kWh?", "acceptedAnswer": { "@type": "Answer", "text": "kWh son las siglas de kilovatio-hora, la unidad que mide la energía consumida a lo largo de un periodo de tiempo, y es la que aparece en la factura de la luz." } },
+    { "@type": "Question", "name": "¿Cuánto cuesta usar un aparato de 1000 W durante una hora?", "acceptedAnswer": { "@type": "Answer", "text": "Un aparato de 1000 W (1 kW) funcionando una hora consume 1 kWh. El coste de esa hora se obtiene multiplicando 1 kWh por el precio del kWh de tu tarifa." } },
+    { "@type": "Question", "name": "¿Dónde encuentro la potencia de mi electrodoméstico?", "acceptedAnswer": { "@type": "Answer", "text": "La potencia en vatios suele aparecer en la etiqueta o placa de características del aparato, en su manual de instrucciones o en la ficha técnica publicada por el fabricante." } },
+    { "@type": "Question", "name": "¿Dónde encuentro el precio del kWh?", "acceptedAnswer": { "@type": "Answer", "text": "El precio del kWh aparece en tu factura de la luz, en el apartado del término de energía. También puedes consultarlo en el área de cliente de tu comercializadora." } },
+    { "@type": "Question", "name": "¿Por qué el resultado puede ser distinto del consumo real?", "acceptedAnswer": { "@type": "Answer", "text": "Porque muchos aparatos no funcionan siempre a su potencia nominal: pueden tener ciclos automáticos, termostatos, modos eco o cambios de potencia según la carga, la temperatura u otros factores, por lo que el consumo real puede variar respecto al cálculo teórico." } },
+    { "@type": "Question", "name": "¿Este cálculo representa toda mi factura?", "acceptedAnswer": { "@type": "Answer", "text": "No. El cálculo estima solo el coste de energía de un aparato concreto. Una factura eléctrica puede incluir otros conceptos, como potencia contratada, impuestos o cargos, además de sumar el consumo de todos los aparatos de la vivienda." } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">Cuentas<span>Hogar</span></a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../index.html#calculadoras">Calculadoras</a></li>
+        <li><a href="../index.html#guias" aria-current="page">Guías</a></li>
+        <li><a href="../sobre-nosotros.html">Sobre nosotros</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="../index.html#calculadoras">Ver calculadoras</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ================= INTRO / BREADCRUMB ================= -->
+  <section class="page-intro">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Miga de pan">
+        <a href="../index.html">Inicio</a> &gt;
+        <a href="../index.html#guias">Guías</a> &gt;
+        <span class="current" aria-current="page">Coste de un electrodoméstico</span>
+      </nav>
+      <h1>Cómo calcular cuánto cuesta usar un electrodoméstico</h1>
+      <p>
+        Saber cuánto cuesta usar un electrodoméstico concreto te permite comparar aparatos, entender qué pesa más en tu factura y tomar decisiones con información real en lugar de intuiciones. Esta guía te explica, paso a paso, cómo llegar a ese cálculo a partir de tres datos básicos: la potencia del aparato, el tiempo que lo usas y el precio del kWh que pagas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+
+        <h2>1. Qué datos necesitas</h2>
+        <p>
+          Para calcular el coste de usar un electrodoméstico solo hacen falta tres datos: la potencia del aparato, el tiempo de uso y el precio del kWh de tu tarifa eléctrica. Con estos tres valores puedes llegar al consumo en kWh y, a partir de ahí, al coste aproximado de cada uso.
+        </p>
+
+        <h2>2. Diferencia entre W, kW y kWh</h2>
+        <p>
+          El vatio (W) es la unidad de potencia, indica cuánta energía necesita un aparato en cada instante. El kilovatio (kW) es simplemente 1000 vatios:
+        </p>
+        <p><code>1000 W = 1 kW</code></p>
+        <p>
+          El kilovatio-hora (kWh) es una unidad de energía, no de potencia: indica cuánta energía se ha consumido a lo largo de un periodo de tiempo, y se calcula así:
+        </p>
+        <p><code>Consumo (kWh) = Potencia (kW) × Tiempo de uso (h)</code></p>
+
+        <h2>3. Cómo encontrar la potencia de un electrodoméstico</h2>
+        <p>
+          La potencia de un aparato suele indicarse en su etiqueta o placa de características, normalmente cerca del cable de alimentación, en su manual de instrucciones, en la ficha técnica o en la documentación publicada por el fabricante. No existe un consumo "típico" universal para cada tipo de electrodoméstico: la potencia real varía según el modelo, la marca y las características concretas de cada aparato, así que siempre es preferible consultar el dato específico del tuyo.
+        </p>
+
+        <h2>4. Cómo calcular el consumo por uso</h2>
+        <p>
+          Una vez que conoces la potencia y el tiempo de uso, puedes calcular el consumo de ese uso. Por ejemplo (cifra hipotética, solo para ilustrar el cálculo): un aparato de 1500 W utilizado durante 2 horas:
+        </p>
+        <ul>
+          <li>1500 W = 1,5 kW</li>
+          <li>1,5 kW × 2 h = 3 kWh</li>
+        </ul>
+        <p>
+          Este ejemplo es solo ilustrativo; para tu propio cálculo debes usar la potencia real de tu aparato y tu propio tiempo de uso.
+        </p>
+
+        <h2>5. Cómo calcular el coste</h2>
+        <p>
+          Con el consumo en kWh ya calculado, el coste se obtiene multiplicándolo por el precio del kWh:
+        </p>
+        <p><code>Coste = kWh × Precio del kWh</code></p>
+        <p>
+          Siguiendo el ejemplo anterior, con un precio hipotético de 0,15 €/kWh (cifra de ejemplo, no un precio actual universal): 3 kWh × 0,15 €/kWh = 0,45 €. Para tu caso real, debes usar el precio que aparece en tu propia factura de la luz.
+        </p>
+
+        <h2>6. Coste diario, mensual y anual</h2>
+        <p>
+          Si conoces con qué frecuencia usas el aparato, puedes extender este cálculo a otros periodos. Por ejemplo, si sabes el coste de un uso y cuántas veces al día, a la semana o al mes lo utilizas, puedes multiplicar ese coste por la frecuencia correspondiente para obtener una estimación diaria, mensual o anual. Al hacer estos cálculos, ten en cuenta que los meses tienen distinta duración; usar 30 días como aproximación para el cálculo mensual es habitual, pero es solo eso, una aproximación.
+        </p>
+
+        <h2>7. Utilizar la calculadora de Cuentas Hogar</h2>
+        <p>
+          Si prefieres no hacer estos cálculos a mano, puedes usar nuestra <a href="../calculadoras/coste-electrodomesticos.html">calculadora de coste de electrodomésticos</a>, que aplica automáticamente estas fórmulas a partir de la potencia, el tiempo de uso, la frecuencia y el precio del kWh que introduzcas. Si además quieres ver el consumo desglosado por día, mes y año de un aparato, puedes complementar el cálculo con nuestra <a href="../calculadoras/consumo-electrico.html">calculadora de consumo eléctrico</a>.
+        </p>
+
+        <h2>8. Por qué el consumo real puede ser diferente</h2>
+        <p>
+          El cálculo anterior asume que el aparato funciona todo el tiempo a su potencia indicada, pero en la práctica muchos electrodomésticos no se comportan así. Factores como los ciclos automáticos, los termostatos, los cambios de potencia según la carga o el modo elegido, la temperatura ambiente o el modo eco pueden hacer que el consumo real difiera del cálculo teórico basado únicamente en la potencia nominal.
+        </p>
+
+        <h2>9. Potencia nominal frente a consumo real</h2>
+        <p>
+          La potencia que aparece en la etiqueta de un aparato es su potencia nominal, es decir, la potencia máxima o de referencia para la que está diseñado. Esto no significa necesariamente que el aparato consuma esa potencia de forma constante durante todo el tiempo que está encendido: muchos aparatos varían su consumo según el momento del ciclo en el que se encuentren o según las condiciones de uso.
+        </p>
+
+        <h2>10. Cómo calcular aparatos que funcionan por ciclos</h2>
+        <p>
+          Aparatos como frigoríficos, equipos de climatización u otros que incorporan compresores o termostatos suelen encender y apagar determinados componentes de forma automática, en lugar de mantener un consumo constante. Esto hace que su consumo real a lo largo del día sea distinto de multiplicar simplemente su potencia máxima por las 24 horas. No es posible dar un porcentaje universal de cuánto tiempo funcionan realmente estos componentes, ya que depende del modelo, del uso y de las condiciones ambientales.
+        </p>
+
+        <h2>11. Coste de aparatos en standby</h2>
+        <p>
+          Algunos aparatos siguen consumiendo una pequeña cantidad de energía incluso cuando están en modo de espera o standby, por ejemplo para mantener un reloj, un mando a distancia o una conexión activa. Este consumo suele ser menor que el de un uso activo del aparato, pero no existe una cifra universal que se pueda aplicar a todos los dispositivos: depende del modelo concreto y de cuánto tiempo permanece en ese estado.
+        </p>
+
+        <h2>12. Por qué el cálculo no coincide necesariamente con la factura</h2>
+        <p>
+          El coste que calculas para un aparato concreto es solo una parte de tu factura eléctrica. Una factura puede incluir, además del consumo de energía, otros conceptos según tu contrato y la normativa aplicable, como componentes fijos, la potencia contratada, impuestos y otros cargos. La estructura exacta varía según la comercializadora y el tipo de tarifa, por lo que no es posible dar aquí datos actuales concretos aplicables a todos los casos; para conocerlos con precisión, lo mejor es revisar tu propia factura.
+        </p>
+
+        <h2>13. Comparar dos electrodomésticos</h2>
+        <p>
+          Para comparar el coste real de dos electrodomésticos, no basta con mirar cuál tiene menos potencia. Conviene tener en cuenta también el tiempo de uso habitual de cada uno, el consumo energético resultante, la frecuencia con la que se utilizan y las necesidades reales que cubren. Un aparato de menor potencia usado muchas horas puede terminar consumiendo más que otro de mayor potencia usado solo unos minutos, así que no es correcto asumir que el de menor potencia siempre sale más económico.
+        </p>
+
+        <h2>14. Cuándo puede tener sentido sustituir un aparato</h2>
+        <p>
+          Antes de decidir sustituir un electrodoméstico por otro supuestamente más eficiente, conviene valorar varios factores: su consumo real estimado, el coste de comprar uno nuevo, la frecuencia con la que realmente usas el aparato, su estado actual, tus necesidades reales y la vida útil que le queda al aparato existente. No siempre compensa cambiar un aparato que sigue funcionando correctamente, y esta decisión depende de cada situación concreta.
+        </p>
+
+        <h2>15. Ejemplo práctico completo</h2>
+        <p>
+          El siguiente ejemplo utiliza cifras hipotéticas, pensadas solo para mostrar el procedimiento completo. Sustituye estos valores por los datos reales de tu aparato y tu tarifa para obtener un resultado ajustado a tu caso.
+        </p>
+        <p>
+          Supongamos un aparato de 1200 W, usado 1,5 horas al día, con un precio hipotético de 0,16 €/kWh:
+        </p>
+        <ul>
+          <li><strong>Potencia:</strong> 1200 W = 1,2 kW</li>
+          <li><strong>Consumo por uso:</strong> 1,2 kW × 1,5 h = 1,8 kWh</li>
+          <li><strong>Coste por uso:</strong> 1,8 × 0,16 = 0,288 €, unos 0,29 €</li>
+          <li><strong>Consumo mensual (uso diario × 30 días de aproximación):</strong> 1,8 × 30 = 54 kWh</li>
+          <li><strong>Coste mensual:</strong> 54 × 0,16 = 8,64 €</li>
+        </ul>
+        <p>
+          Puedes repetir este mismo cálculo con tus propios datos usando nuestra <a href="../calculadoras/coste-electrodomesticos.html">calculadora de coste de electrodomésticos</a>. Si además quieres organizar este gasto junto al resto de tu presupuesto mensual, puedes usar nuestra <a href="../calculadoras/presupuesto-hogar.html">calculadora de presupuesto del hogar</a>.
+        </p>
+
+        <h2>16. Errores frecuentes</h2>
+        <p>
+          Algunos errores habituales al calcular el coste de un electrodoméstico son: confundir vatios con kWh, que son unidades distintas; olvidar dividir los vatios entre 1000 para pasarlos a kilovatios; ignorar el tiempo de uso real y fijarse solo en la potencia; utilizar un precio del kWh incorrecto o desactualizado en lugar del que aparece en tu propia factura; confundir el coste de un aparato concreto con el total de tu factura eléctrica; y asumir que la potencia nominal se mantiene siempre constante, sin tener en cuenta ciclos, termostatos o modos de funcionamiento variables.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section section-alt" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading">Preguntas frecuentes sobre el coste de los electrodomésticos</h2>
+      <div class="prose">
+        <div class="faq-item">
+          <h3>¿Cómo saber cuánto cuesta usar un electrodoméstico?</h3>
+          <p>Se calcula el consumo en kWh (potencia en kW multiplicada por las horas de uso) y se multiplica por el precio del kWh de tu tarifa. El resultado es el coste aproximado de ese uso.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo pasar de W a kW?</h3>
+          <p>Se divide la potencia en vatios entre 1000, ya que 1000 W equivalen a 1 kW.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué significa kWh?</h3>
+          <p>kWh son las siglas de kilovatio-hora, la unidad que mide la energía consumida a lo largo de un periodo de tiempo, y es la que aparece en la factura de la luz.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuánto cuesta usar un aparato de 1000 W durante una hora?</h3>
+          <p>Un aparato de 1000 W (1 kW) funcionando una hora consume 1 kWh. El coste de esa hora se obtiene multiplicando 1 kWh por el precio del kWh de tu tarifa.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Dónde encuentro la potencia de mi electrodoméstico?</h3>
+          <p>La potencia en vatios suele aparecer en la etiqueta o placa de características del aparato, en su manual de instrucciones o en la ficha técnica publicada por el fabricante.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Dónde encuentro el precio del kWh?</h3>
+          <p>El precio del kWh aparece en tu factura de la luz, en el apartado del término de energía. También puedes consultarlo en el área de cliente de tu comercializadora.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Por qué el resultado puede ser distinto del consumo real?</h3>
+          <p>Porque muchos aparatos no funcionan siempre a su potencia nominal: pueden tener ciclos automáticos, termostatos, modos eco o cambios de potencia según la carga, la temperatura u otros factores, por lo que el consumo real puede variar respecto al cálculo teórico.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Este cálculo representa toda mi factura?</h3>
+          <p>No. El cálculo estima solo el coste de energía de un aparato concreto. Una factura eléctrica puede incluir otros conceptos, como potencia contratada, impuestos o cargos, además de sumar el consumo de todos los aparatos de la vivienda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Cuentas<span>Hogar</span></div>
+
+    <nav class="footer-nav" aria-label="Enlaces de pie de página">
+      <a href="../sobre-nosotros.html">Sobre nosotros</a>
+      <a href="../contacto.html">Contacto</a>
+      <a href="../privacidad.html">Privacidad</a>
+      <a href="../cookies.html">Cookies</a>
+      <a href="../aviso-legal.html">Aviso legal</a>
+    </nav>
+
+    <p class="footer-copy">© 2026 Cuentas Hogar</p>
+  </div>
+</footer>
+
+<script src="../main.js" defer></script>
+</body>
+</html>
